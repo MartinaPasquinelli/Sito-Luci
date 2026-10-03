@@ -84,6 +84,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const guestbookForm = document.getElementById('guestbook-form');
     const entriesContainer = document.getElementById('guestbook-entries');
 
+    // Load from local storage
+    let guestbookData = JSON.parse(localStorage.getItem('guestbookEntries')) || [];
+    guestbookData.forEach(entry => {
+        const li = document.createElement('li');
+        li.className = 'gb-entry';
+        li.innerHTML = `<strong>${entry.name}</strong> <em>(${entry.country})</em> at ${entry.time}: <br> ${entry.message}`;
+        entriesContainer.appendChild(li);
+    });
+
     guestbookForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
@@ -96,172 +105,278 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = messageInput.value.trim();
 
         if (name && message) {
-            // Crea un nuovo elemento lista
-            const li = document.createElement('li');
-            li.className = 'gb-entry';
-
-            // Formatta la data
             const now = new Date();
             const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
-            li.innerHTML = `<strong>${name}</strong> <em>(${country || 'Unknown'})</em> at ${timeString}: <br> ${message}`;
+            const entry = { name, country: country || 'Unknown', time: timeString, message };
+            guestbookData.unshift(entry);
+            localStorage.setItem('guestbookEntries', JSON.stringify(guestbookData));
 
-            // Aggiungi in cima alla lista
+            const li = document.createElement('li');
+            li.className = 'gb-entry';
+            li.innerHTML = `<strong>${entry.name}</strong> <em>(${entry.country})</em> at ${entry.time}: <br> ${entry.message}`;
+
             entriesContainer.prepend(li);
-
-            // Pulisci i campi (lasciamo magari il nome se vuole riscrivere, ma per ora puliamo tutto o solo il msg)
             messageInput.value = '';
-
-            // Auto-scroll in cima se serve, ma con prepend è già visibile
         }
     });
 });
-
-// --- Dino Game Logic ---
+// --- Calendar Logic ---
 (function () {
-    const canvas = document.getElementById('dinoCanvas');
-    const ctx = canvas.getContext('2d');
-    const container = document.getElementById('dino-game-container');
-    const startText = document.getElementById('dino-start-text');
+    const calendarContainer = document.getElementById('calendar-container');
+    if (!calendarContainer) return;
 
-    const dinoImg = new Image();
-    dinoImg.src = 'img/dino.png';
-    const cactusImg = new Image();
-    cactusImg.src = 'img/cactus.png';
+    // Mese iniziale: Novembre 2026
+    let currentDate = new Date(2026, 10, 1);
 
-    let gameLoop;
-    let isPlaying = false;
-    let score = 0;
-    let frameCount = 0;
+    function renderCalendar(date) {
+        const year = date.getFullYear();
+        const month = date.getMonth();
 
-    const dino = {
-        x: 30,
-        y: 110,
-        width: 20,
-        height: 24,
-        dy: 0,
-        gravity: 0.6,
-        jumpPower: -10,
-        isJumping: false,
-        draw: function () {
-            ctx.drawImage(dinoImg, this.x, this.y, this.width, this.height);
-        },
-        update: function () {
-            this.dy += this.gravity;
-            this.y += this.dy;
+        const monthNames = [
+            "Gennaio",
+            "Febbraio",
+            "Marzo",
+            "Aprile",
+            "Maggio",
+            "Giugno",
+            "Luglio",
+            "Agosto",
+            "Settembre",
+            "Ottobre",
+            "Novembre",
+            "Dicembre"
+        ];
 
-            if (this.y > 110) {
-                this.y = 110;
-                this.dy = 0;
-                this.isJumping = false;
+        // Giorno della settimana del primo giorno del mese
+        const firstDay = new Date(year, month, 1).getDay();
+
+        // Numero di giorni nel mese
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+        // Data di oggi
+        const today = new Date();
+
+        let html = `
+            <div style="
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                margin-bottom:5px;
+            ">
+                <button
+                    id="prev-month"
+                    style="
+                        cursor:pointer;
+                        background:none;
+                        border:none;
+                        font-size:16px;
+                    "
+                >&lt;</button>
+
+                <span class="pink-text">
+                    ${monthNames[month]} ${year}
+                </span>
+
+                <button
+                    id="next-month"
+                    style="
+                        cursor:pointer;
+                        background:none;
+                        border:none;
+                        font-size:16px;
+                    "
+                >&gt;</button>
+            </div>
+
+            <table class="calendar-table">
+                <tr>
+                    <th>S</th>
+                    <th>M</th>
+                    <th>T</th>
+                    <th>W</th>
+                    <th>T</th>
+                    <th>F</th>
+                    <th>S</th>
+                </tr>
+                <tr>
+        `;
+
+        let dayCount = 1;
+
+        // 42 celle = 6 settimane
+        for (let i = 0; i < 42; i++) {
+
+            // Celle vuote prima dell'inizio del mese
+            if (i < firstDay || dayCount > daysInMonth) {
+                html += `<td></td>`;
+
+            } else {
+
+                // OGGI
+                const isToday =
+                    year === today.getFullYear() &&
+                    month === today.getMonth() &&
+                    dayCount === today.getDate();
+
+                // D-DAY: 25 Novembre 2026
+                const isDDay =
+                    year === 2026 &&
+                    month === 10 &&
+                    dayCount === 25;
+
+                let classes = 'class="pink-text"';
+                let content = dayCount;
+
+                // Il D-Day ha la precedenza visiva
+                if (isDDay) {
+                    classes = 'class="pink-text d-day"';
+
+                    content = `
+                        <span class="d-day-number" title="D-Day!!!">
+                            ${dayCount}
+                        </span>
+                        <span class="d-day-label">
+                            D-DAY!!!
+                        </span>
+                    `;
+
+
+                } else if (isToday) {
+                    classes = 'class="current-day"';
+                }
+
+                html += `
+                    <td ${classes}>
+                        ${content}
+                    </td>
+                `;
+
+                dayCount++;
             }
-        },
-        jump: function () {
-            if (!this.isJumping) {
-                this.dy = this.jumpPower;
-                this.isJumping = true;
+
+            // Nuova riga ogni 7 giorni
+            if ((i + 1) % 7 === 0) {
+                html += `</tr><tr>`;
             }
         }
-    };
 
-    let obstacles = [];
-    const obstacleSpeed = 4;
+        html += `
+                </tr>
+            </table>
+        `;
 
-    function drawGround() {
-        ctx.strokeStyle = '#535353';
-        ctx.beginPath();
-        ctx.moveTo(0, 134);
-        ctx.lineTo(400, 134);
-        ctx.stroke();
+        calendarContainer.innerHTML = html;
+
+        // Mese precedente
+        document
+            .getElementById('prev-month')
+            .addEventListener('click', () => {
+                renderCalendar(new Date(year, month - 1, 1));
+            });
+
+        // Mese successivo
+        document
+            .getElementById('next-month')
+            .addEventListener('click', () => {
+                renderCalendar(new Date(year, month + 1, 1));
+            });
     }
 
-    function spawnObstacle() {
-        obstacles.push({
-            x: 400,
-            y: 114,
-            width: 15,
-            height: 20
+    renderCalendar(currentDate);
+})();
+
+
+// --- Navigation Logic ---
+(function () {
+    const colMiddle = document.querySelector('.main-box');
+    if (!colMiddle) return;
+
+    // Save initial content (HOME)
+    const initialHomeContent = colMiddle.innerHTML;
+
+    const navHome = document.getElementById('nav-home');
+    const navAbout = document.getElementById('nav-about');
+    const navBlueprint = document.getElementById('nav-blueprint');
+
+    if (navHome) {
+        navHome.addEventListener('click', (e) => {
+            e.preventDefault();
+            colMiddle.innerHTML = initialHomeContent;
         });
     }
 
-    function updateObstacles() {
-        for (let i = 0; i < obstacles.length; i++) {
-            let obs = obstacles[i];
-            obs.x -= obstacleSpeed;
-            ctx.drawImage(cactusImg, obs.x, obs.y, obs.width, obs.height);
-
-            // Collision detection
-            if (dino.x < obs.x + obs.width &&
-                dino.x + dino.width > obs.x &&
-                dino.y < obs.y + obs.height &&
-                dino.y + dino.height > obs.y) {
-                gameOver();
-            }
-        }
-
-        // Remove off-screen obstacles
-        obstacles = obstacles.filter(obs => obs.x + obs.width > 0);
+    if (navAbout) {
+        navAbout.addEventListener('click', (e) => {
+            e.preventDefault();
+            colMiddle.innerHTML = `
+                    <div class="box-header">ABOUT</div>
+                    <div class="box-content center-text">
+                        <p class="pink-text" style="text-align: left;">Hello there!</p>
+                        <img style="width: 278px;height: 157px" src="gif/hello_there.gif" class="gif" alt="obi one">
+                        <p>This section is dedicated to me!!!<img src="img/slay.png" style="width: 40px;height: 40px; top:13px; position:relative;></p>
+                        <p><br> <br>I'm a little <span  class="pink-text">gremlin</span> from 2004 who loves too much things.
+                         Recently I passed from studying tarots, to crocheting, to trying building very cool things 
+                         like the totally spies compowder, because duh! Who doesn't want to do it?! So, the whole cyberdeck project, 
+                         as well as this website, are the product of my current <span class="pink-text">hyperfixation</span>!</p>
+                        <div style="display: flex; flex-direction: row;">
+                            <div style="padding-right: 10px;">
+                                <p>I love cats and I'm Daenerys Targaryen twin, 
+                                the only difference is that my dragons throw 
+                                up balls of fur instead of breathing fire.
+                                </p>
+                                <img src="img/black_cat.png" class="black_cat" alt="gattino nero">
+                                <p style="text-align: right; font-style:italic;">miaomiaomiaomiaomiaomiaomiaomiaomiaomiao</p>
+                            </div>
+                            <img style="width: 157px;height: 157px; margin-top: 0px;" src="img/daeni.png" class="gif" alt="Daeneris">
+                        </div>
+                        <p>
+                            I love the <span class="pink-text">old internet</span>, I’ve grown up playing
+                            on site like girl.go.games, watching series on yt and researching on wikipedia. This is my tribute to it!</p>
+                    </div>`;
+        });
     }
 
-    function drawScore() {
-        ctx.fillStyle = '#535353';
-        ctx.font = '12px var(--font-pixel, monospace)';
-        ctx.fillText('SCORE: ' + Math.floor(score), 320, 20);
+    if (navBlueprint) {
+        navBlueprint.addEventListener('click', (e) => {
+            e.preventDefault();
+            colMiddle.innerHTML = `
+                    <div class="box-header">BLUEPRINT</div>
+                    <div class="box-content center-text">
+                        <div style="display: flex; flex-direction: row;">
+                            <div style="padding-right: 10px;">
+                                <p>Do you know <span class="pink-text">the muffin man? </span></p>
+                                <p>If you don’t...well, I don’t know.</p> 
+                                <p>Anyway, check out Ube Boobey,(<a
+                                href="https://www.youtube.com/@UbeBoobey" class="pink-text">click here</a>), she’s my muse.</p>
+                            </div> 
+                             <img style="width: 260px;height: 153px; margin-top: 0px;" src="img/farquaad.jfif" class="gif" alt="Lord Farquad">
+                        </div>
+                        <p>The idea behind this site starts with <span class="pink-text">checking facts</span>.
+                        We live in Varoufakis’s technofeudalism,a system where we are the <span class="pink-text">serfs of Big Techs</span> that drain our time and emotions. 
+                        The fix? <span class="pink-text">Use the tech to hack the tech.</span></p>
+                       <div class="katniss-text">   
+                            <p style="margin-bottom:0px;">
+                                Quincho and Walsh (they’re very cool, google them!) explain that online
+                                we are forced to be a <span class="pink-text">‘Girl’</span>.
+                                Naive and mischievous, without responsibilities. But we can use this
+                                stereotype as a
+                            </p>
+
+                            <img src="gif/katniss.gif" alt="Katniss">
+
+                            <p>
+                                <span class="pink-text">Trojan horse</span> to sabotage the system.
+                                It’s not about gender, it’s a critical posture.
+                                We can be the Katniss Everdeen of the web and set fire to the platform
+                                morass through self-design.
+                            </p>
+
+                        </div>
+                        <p>BE A GIRL. HACK THE STACK.<span class='pink-text'> BRING BACK THE OLD INTERNET.</span></p>
+                    </div>`;
+        });
     }
-
-    function gameUpdate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        drawGround();
-        dino.update();
-        dino.draw();
-
-        if (frameCount % 90 === 0) {
-            spawnObstacle();
-        }
-        updateObstacles();
-
-        score += 0.1;
-        drawScore();
-
-        frameCount++;
-        if (isPlaying) {
-            gameLoop = requestAnimationFrame(gameUpdate);
-        }
-    }
-
-    function startGame() {
-        if (isPlaying) return;
-        isPlaying = true;
-        score = 0;
-        frameCount = 0;
-        obstacles = [];
-        dino.y = 110;
-        dino.dy = 0;
-        startText.style.display = 'none';
-        gameUpdate();
-    }
-
-    function gameOver() {
-        isPlaying = false;
-        cancelAnimationFrame(gameLoop);
-        startText.innerText = 'Game Over! Click to Restart';
-        startText.style.display = 'block';
-    }
-
-    function handleInput(e) {
-        if (e.type === 'keydown' && e.code !== 'Space') return;
-        if (e.type === 'keydown') e.preventDefault(); // Prevent scrolling
-
-        if (!isPlaying) {
-            startGame();
-        } else {
-            dino.jump();
-        }
-    }
-
-    container.addEventListener('mousedown', handleInput);
-    container.addEventListener('keydown', handleInput);
 })();
 
 

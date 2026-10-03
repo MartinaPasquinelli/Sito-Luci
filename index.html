@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucyz - Y2K Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,16 +19,16 @@
             </div>
             <nav class="navbar">
                 <div class="cat-left">
-                    <img src="img/gattinopixelleft.png" alt="">
+                    <img src="img/gato.png" alt="">
                 </div>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">BLUEPRINT</a></li>
+                    <li><a href="#" id="nav-home">HOME</a></li>
+                    <li><a href="#" id="nav-about">ABOUT</a></li>
+                    <li><a href="#" id="nav-blueprint">BLUEPRINT</a></li>
                     <li><a href="#">TAPE</a></li>
                 </ul>
                 <div class="cat-right">
-                    <img src="img/gattinopixelright.png" alt="">
+                    <img src="img/gato_2.png" alt="">
                 </div>
             </nav>
             <div class="marquee-strip">
@@ -50,16 +46,17 @@
                     <div class="box-header">PROFILE</div>
                     <div class="box-content">
                         <div class="profile-top">
-                            <div class="profile-pic placeholder-img"></div>
+                            <img src="img/profilo.png" class="profile-pic " alt="Immgine profilo">
                             <div class="profile-name">
-                                <strong>Lucia</strong><br>
-                                <span class="small-text">I'm an italian communication designer!</span>
+                                <span class="pink-text">Lucia</span><br>
+                                <span>I'm an italian communication designer!</span>
                             </div>
                         </div>
-                        <p class="profile-desc">I'm 23 years old, I love cats (I'm not a threat and I have too many
+                        <p style="margin-bottom: 45px;">I'm 23 years old, I love cats (I'm not a threat and I have too
+                            many
                             interests :))</p>
                         <div class="tags">
-                            <span class="tag">worker</span>
+                            <span class="tag">she/her</span>
                             <span class="tag">capricorn</span>
                             <span class="tag">bisexual</span>
                         </div>
@@ -75,12 +72,12 @@
                         </div>
                         <div class="cd-container">
                             <div class="cd-disc" id="cd-disc"></div>
-                            <div class="cd-cover" style="background-image: url('img/vinile.jpg');"></div>
+                            <div class="cd-cover" style="background-image: url('img/cover.png');"></div>
                         </div>
                         <div class="song-info">
-                            <strong class="pink-text" style="font-family: var(--font-pixel); font-size: 1.2rem;">I'm
-                                Just a Girl</strong><br>
-                            <span>-No doubt</span>
+                            <span class="pink-text" style="font-family: var(--font-main);">I'm
+                                Just a Girl</span><br>
+                            <span>- No doubt</span>
                         </div>
                         <!-- Inserisci qui il vero file mp3 -->
                         <audio id="bg-music" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
@@ -91,43 +88,59 @@
                 <div class="box mood-box">
                     <div class="box-header">MOOD</div>
                     <div class="box-content mood-banners">
-                        <div class="banner placeholder-img"></div>
-                        <div class="banner placeholder-img"></div>
-                        <div class="banner placeholder-img"></div>
-                        <div class="banner placeholder-img"></div>
+                        <div class="banner"><a href="https://kkul.love/" target="_blank"><img
+                                    src="https://file.garden/aS-t0Aj4K3mdDujK/buttons/kkul.gif" width="88"
+                                    height="31"></a></div>
+                        <div class="banner"><a href="https://nyaa.neocities.org"><img
+                                    src="https://nyaa.neocities.org/nyaabanner.gif"></a>
+                        </div>
+                        <div class="banner"><a href="https://petrapixel.neocities.org/" target="_blank"><img
+                                    src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif"
+                                    alt="petrapixel"></a></div>
+                        <div class="banner">
+                            <a href="https://meiker.io/play/15746/online.html" target="_blank"><img
+                                    style="width: 88px; height: 31px;" src="img/button_bratz.jpg"
+                                    alt="bratzdollmaker"></a>
+                        </div>
                     </div>
                 </div>
 
-                <img src="img/gattino.png" class="floating-cat" alt="Gattino con i fiori">
+                <img src="img/micio_fiori.png" class="floating-cat" alt="Gattino con i fiori">
             </div>
 
             <!-- Middle Column -->
             <div class="col col-middle">
-                <div class="box welcome-box">
+                <div class="box main-box">
                     <div class="box-header" style="position: relative;">
                         WELCOME!
-                        <img src="img/zampina.png" class="paw-icon" alt="Zampina">
                     </div>
-                    <div class="box-content center-text">
-                        <h3 style=" padding: 0px;margin: 0px !important;">Hi, I'm <span class="pink-text">Lucy!</span>
-                        </h3>
-                        <p>Just a girl, from Rimini, <span class="pink-text">hacking the system.</span></p>
-                        <p>This is the site about my bachelor's project. A Bratz cyberdeck (a DIY mini PC from e-waste)
+                    <div class="box-content center-text" style="text-align:center;">
+                        <div style="display: flex; align-items: center; gap: 8px;justify-content: center;">
+                            <p style="padding: 0; margin: 0 !important;">
+                                Hi, I'm <span class="pink-text">Lucy!</span>
+                            </p>
+
+                            <img src="gif/pawpaw.gif" class="paw-icon" alt="Zampina">
+                        </div>
+                        <p style="text-align:center;">Just a girl, from Rimini, <span class="pink-text">hacking the
+                                system.</span></p>
+                        <p style="text-align:center;">This is the site about my bachelor's project. A Bratz cyberdeck (a
+                            DIY mini PC from e-waste)
                             cyberpunk cultural built to keep the old DIY Y2K spirit alive.</p>
-                        <p class="note">Note: Desktop view is suggested (1920x1080). No mobile allowed, because breaking
+                        <p style="text-align:center;">Note:<br> Desktop view is suggested (1920x1080). No mobile
+                            allowed, because breaking
                             the rules currently starts here.</p>
-                        <p>Check out the project, sign the guestbook, <a href="#" class="pink-text">email me</a> if you
+                        <p style="text-align:center;">Check out the project, sign the guestbook, <a
+                                href="luciamorri05@gmail.com" class="pink-text">email me</a> if you
                             want and <span class="pink-text">let's bring back the real web! :)</span></p>
-                        <img src="img/diva.gif" class="welcome-img" alt="Welcome Diva">
+                        <img src="gif/diva.gif" class="gif" alt="Welcome Diva">
                     </div>
                 </div>
 
                 <div class="box dino-box">
-                    <div class="box-content" style="padding: 0;">
-                        <div id="dino-game-container" tabindex="0">
-                            <canvas id="dinoCanvas" width="400" height="150"></canvas>
-                            <div id="dino-start-text">Press SPACE or Click to Start</div>
-                        </div>
+                    <div class="box-content" style="padding: 0; height: 174px; overflow: hidden; position: relative;">
+                        <iframe src="https://wayou.github.io/t-rex-runner/" frameborder="0" scrolling="no" width="100%"
+                            height="200" style="position: absolute; left: 20px; width: calc(100% - 40px);"></iframe>
                     </div>
                 </div>
             </div>
@@ -136,78 +149,26 @@
             <div class="col col-right">
                 <div class="box calendar-box">
                     <div class="box-header">CALENDAR</div>
-                    <div class="box-content calendar-content">
-                        <strong>Novembre 2026</strong>
-                        <table class="calendar-table">
-                            <tr>
-                                <th>S</th>
-                                <th>M</th>
-                                <th>T</th>
-                                <th>W</th>
-                                <th>T</th>
-                                <th>F</th>
-                                <th>S</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                            </tr>
-                            <tr>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
-                                <td>18</td>
-                                <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                            </tr>
-                            <tr>
-                                <td>22</td>
-                                <td>23</td>
-                                <td>24</td>
-                                <td class="current-day">25</td>
-                                <td>26</td>
-                                <td>27</td>
-                                <td>28</td>
-                            </tr>
-                            <tr>
-                                <td>29</td>
-                                <td>30</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </table>
+                    <div class="box-content calendar-content" id="calendar-container">
+                        <!-- Calendar injected by JS -->
                     </div>
                 </div>
 
                 <div class="box clap-box">
                     <div class="box-header">CLAP</div>
-                    <div class="box-content clap-content">
-                        👏 28888 👏
+                    <div class="box-content clap-content"
+                        style="padding: 10px; display: flex; justify-content: center;">
+                        <a href="https://clap.fc2.com/" target="_blank" class="pink-text">
+                            <img src="https://clap.fc2.com/images/button.gif" alt="Clap!" style="border:none;"
+                                onerror="this.outerHTML='👏 CLAP 👏'">
+                        </a>
                     </div>
                 </div>
 
                 <div class="box stressed-box">
                     <div class="box-header">THIS PROJECT WAS SO STRESSFUL!!!</div>
                     <div class="box-content stressed-content ">
-                        <img src="img/diva2.jpg" class="stressed-img" alt="Stressed Diva">
+                        <img src="img/diva.jpg" class="stressed-img" alt="Stressed Diva">
                     </div>
                 </div>
             </div>

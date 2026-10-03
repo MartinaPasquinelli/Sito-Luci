@@ -1,30 +1,43 @@
+@font-face {
+    font-family: 'Monogram';
+    src: url('font/monogram-extended.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --pink-bg: #ffb6c1;
-    --hot-pink: #ff69b4;
+    --hot-pink: #D62584;
     --dark-pink: #d84589;
     --light-pink: #ffe4e1;
     --box-bg: #ffffff;
     --box-border: #D62584;
     --text-color: #333;
-    --font-pixel: 'VT323', monospace;
-    --font-main: 'Pixelify Sans', sans-serif;
+    --button-grey: rgba(255, 255, 255, 0.15);
+    --font-main: 'Monogram', 'Pixelify Sans', sans-serif;
     /* Y2K vibe */
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
+    font-size: 22px;
+    line-height: 21px;
     color: var(--text-color);
     background-color: var(--pink-bg);
     /* In futuro qui andrà l'immagine del pattern leopardato rosa */
     background-image: url('img/sfondo.png');
     background-size: cover;
     background-attachment: fixed;
+}
+
+p {
+    margin-top: 0px;
+    text-align: left;
+
 }
 
 .background-overlay {
@@ -107,17 +120,11 @@ header {
     /* sporgono sopra */
 }
 
-.cat-left img {
-    width: 75px;
-    height: 75px;
-    image-rendering: pixelated;
-}
-
+.cat-left,
 .cat-right img {
     width: 75px;
     height: 75px;
     image-rendering: pixelated;
-    transform: scaleX(-1);
 
 }
 
@@ -134,10 +141,13 @@ header {
 .navbar a {
     text-decoration: none;
     color: #000;
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
     transition: color 0.2s;
+    width: 60px;
+    height: 25px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 25px;
+
 }
 
 .navbar a:hover {
@@ -161,7 +171,7 @@ header {
 
 .marquee-track span {
     color: #ffffff;
-    font-family: var(--font-pixel);
+    font-family: var(--font-main);
     font-size: 1.1rem;
     letter-spacing: 4px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
@@ -192,14 +202,13 @@ header {
 .box-header {
     background: #FFCAE4;
     color: #000000;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 28px;
     line-height: 1.3;
     text-transform: uppercase;
     text-align: center;
-    padding: 8px 2px;
     border-bottom: 2px solid #D62584;
     border-radius: 12px 12px 0 0;
     display: flex;
@@ -207,6 +216,8 @@ header {
     justify-content: center;
     box-shadow: inset -2px -2px 4px #D62584,
         inset 2px 2px 4px #FFFFFF;
+
+
 }
 
 .box-content {
@@ -225,7 +236,6 @@ header {
 
 .pink-text {
     color: var(--hot-pink);
-    font-weight: bold;
 }
 
 /* =========================================
@@ -234,7 +244,7 @@ header {
 .top-section {
     display: flex;
     gap: 20px;
-    width: 90%;
+    width: 100%;
     margin-bottom: 40px;
     align-items: flex-start;
 }
@@ -261,7 +271,6 @@ header {
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .profile-pic {
@@ -289,14 +298,18 @@ header {
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .tag {
-    border: 1px solid var(--hot-pink);
+
+    box-sizing: border-box;
+    box-shadow: inset -6px -6px 4px #FFCAE4, inset 6px 6px 4px #FFCAE4;
     border-radius: 10px;
+    border: 2px solid var(--hot-pink);
     padding: 2px 8px;
-    font-size: 0.75rem;
-    background: var(--light-pink);
+    font-size: 17px;
+    background: var(--button-grey);
 }
 
 .playing-content {
@@ -308,35 +321,33 @@ header {
 }
 
 .song-info {
-    margin-left: 15px;
+    margin-left: 40px;
     position: relative;
     z-index: 3;
-    background: rgba(255, 255, 255, 0.9);
     padding: 5px 10px;
     border-radius: 10px;
-    border: 1px dashed var(--hot-pink);
+    text-align: right;
 }
 
 /* Speech Bubble per la musica */
 .speech-bubble {
     position: absolute;
-    top: -40px;
+    height: 67px;
+    font-family: var(--font-main);
+    top: -10px;
     left: -60px;
-    background: white;
-    border: 2px solid #000;
     padding: 10px;
-    font-family: var(--font-pixel);
     font-size: 1rem;
     z-index: 10;
-    box-shadow: 2px 2px 0 #000;
-    /* Un look pixelato */
-    border-image: url('data:image/svg+xml;utf8,<svg ...>') 2;
-    /* Semplificato */
+    background-image: url('img/popup.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
     /* Visibile solo in hover */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+
 }
 
 .now-playing-box:hover .speech-bubble {
@@ -344,59 +355,38 @@ header {
     visibility: visible;
 }
 
-.speech-bubble::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    right: 20px;
-    border-width: 10px 10px 0 0;
-    border-style: solid;
-    border-color: #000 transparent transparent transparent;
-}
-
-.speech-bubble::before {
-    content: '';
-    position: absolute;
-    bottom: -7px;
-    right: 21px;
-    border-width: 8px 8px 0 0;
-    border-style: solid;
-    border-color: #fff transparent transparent transparent;
-    z-index: 1;
-}
-
 .cd-container {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 74px;
+    height: 74px;
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 6px;
 }
 
 .cd-cover {
-    width: 60px;
-    height: 60px;
+    width: 74px;
+    height: 74px;
     position: absolute;
     z-index: 2;
     border: 2px solid #fff;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 
-    background-image: url('img/vinile.jpg');
+    background-image: url('img/cover.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .cd-disc {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    background-image: url('img/disco.png');
+    background-image: url('img/cd.png');
     background-size: cover;
     background-position: center;
     position: absolute;
-    right: -15px;
+    right: -35px;
     /* Esce un po' fuori dal quadrato rosso */
     z-index: 1;
     transition: transform 0.5s ease-in-out;
@@ -425,6 +415,7 @@ header {
 }
 
 .banner {
+    text-align: center;
     height: 30px;
 }
 
@@ -438,30 +429,52 @@ header {
 }
 
 /* -- Middle Column Specifics -- */
-.welcome-box {
+.main-box {
     overflow: visible;
 }
 
-.welcome-box .box-content {
+.main-box .box-content {
     padding: 30px;
-    line-height: 1.6;
 }
 
 .center-text {
     text-align: center;
 }
 
-.welcome-img {
-    width: 100%;
-    height: 200px;
+
+
+.gif {
+    width: 218px;
+    height: 218px;
     margin-top: 20px;
     border-radius: 10px;
     object-fit: cover;
 }
 
+.black_cat {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 880px;
+    left: 460px;
+}
+
+.katniss-text {
+    position: relative;
+}
+
+.katniss-text img {
+    float: right;
+    width: 50%;
+    max-width: 410px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
 .note {
     font-size: 0.8rem;
-    font-family: var(--font-pixel);
+    font-family: var(--font-main);
     background: #eee;
     padding: 2px;
     margin: 0px;
@@ -493,13 +506,9 @@ header {
 }
 
 .paw-icon {
-    position: absolute;
-    right: 17px;
-    top: -24px;
-    width: 64px;
-    height: auto;
-    cursor: pointer;
-    z-index: 10;
+    width: 43px;
+    height: 43px;
+
 }
 
 .box-header:hover .paw-icon {
@@ -525,7 +534,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: var(--font-pixel);
+    font-family: var(--font-main);
     font-size: 1.2rem;
     color: #535353;
     pointer-events: none;
@@ -539,24 +548,50 @@ header {
 .calendar-table {
     width: 100%;
     margin-top: 10px;
-    font-size: 0.8rem;
     text-align: center;
 }
 
 .calendar-table th {
-    color: var(--hot-pink);
+    font-weight: normal;
+    color: var(--text-color);
 }
 
 .current-day {
-    border: 1px solid var(--hot-pink);
+    color: var(--text-color);
+}
+
+.d-day {
+    position: relative;
+}
+
+.d-day-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
     border-radius: 50%;
-    background: var(--light-pink);
+
+    color: #000;
+}
+
+.d-day-label {
+    position: absolute;
+
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    white-space: nowrap;
+
+    font-size: 20px;
+    color: #000;
+    line-height: 1;
 }
 
 .clap-content {
     text-align: center;
     font-size: 1.2rem;
-    font-weight: bold;
 }
 
 
@@ -594,7 +629,7 @@ header {
     border-radius: 15px;
     padding: 2px 10px;
     font-size: 0.8rem;
-    font-family: var(--font-pixel);
+    font-family: var(--font-main);
     text-transform: uppercase;
 }
 
@@ -706,7 +741,6 @@ header {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     cursor: pointer;
-    font-weight: bold;
     font-family: var(--font-main);
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, background 0.2s;
@@ -768,7 +802,6 @@ header {
     justify-content: space-between;
     align-items: center;
     color: white;
-    font-weight: bold;
 }
 
 .title-bar-controls button {
@@ -837,7 +870,7 @@ header {
 .guestbook-title {
     text-align: center;
     color: var(--hot-pink);
-    font-family: var(--font-pixel);
+    font-family: var(--font-main);
     letter-spacing: 2px;
     margin-top: 0;
 }
@@ -912,7 +945,6 @@ header {
     border-radius: 10px;
     padding: 5px 15px;
     cursor: pointer;
-    font-weight: bold;
     transition: background 0.2s;
 }
 
