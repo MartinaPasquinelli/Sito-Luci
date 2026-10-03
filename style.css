@@ -1,0 +1,967 @@
+:root {
+    --pink-bg: #ffb6c1;
+    --hot-pink: #ff69b4;
+    --dark-pink: #d84589;
+    --light-pink: #ffe4e1;
+    --box-bg: #ffffff;
+    --box-border: #D62584;
+    --text-color: #333;
+    --font-pixel: 'VT323', monospace;
+    --font-main: 'Pixelify Sans', sans-serif;
+    /* Y2K vibe */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--text-color);
+    background-color: var(--pink-bg);
+    /* In futuro qui andrà l'immagine del pattern leopardato rosa */
+    background-image: url('img/sfondo.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, transparent 20%, rgba(255, 105, 180, 0.2) 100%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================================
+   HEADER & NAVBAR
+========================================= */
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-container {
+    margin: 20px 0;
+}
+
+.logo-img {
+    max-width: 400px;
+    height: auto;
+    filter: drop-shadow(4px 4px 0px var(--hot-pink)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.navbar {
+    box-sizing: border-box;
+    width: 1200px;
+    height: 50px;
+    left: calc(50% - 1300px/2 - 23px);
+    top: 300px;
+    background: #FFCAE4;
+    border: 2px solid #D62584;
+    box-shadow: inset -3px -3px 9px #D62584, inset 6px 6px 6px #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    overflow: visible;
+}
+
+/* Gatti pixel ai lati della navbar */
+.cat-left,
+.cat-right {
+    flex-shrink: 0;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    top: -4px;
+    /* sporgono sopra */
+}
+
+.cat-left img {
+    width: 75px;
+    height: 75px;
+    image-rendering: pixelated;
+}
+
+.cat-right img {
+    width: 75px;
+    height: 75px;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: var(--hot-pink);
+}
+
+.marquee-strip {
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    padding: 8px 0;
+    margin-top: 10px;
+}
+
+.marquee-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee-scroll 20s linear infinite;
+    transform: translateX(100%);
+}
+
+.marquee-track span {
+    color: #ffffff;
+    font-family: var(--font-pixel);
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* =========================================
+   GENERIC BOXES (Y2K UI)
+========================================= */
+.box {
+    background: var(--box-bg);
+    border: 2px solid var(--box-border);
+    border-radius: 17px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.box-header {
+    background: #FFCAE4;
+    color: #000000;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 2px;
+    border-bottom: 2px solid #D62584;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -2px -2px 4px #D62584,
+        inset 2px 2px 4px #FFFFFF;
+}
+
+.box-content {
+    padding: 15px;
+}
+
+.placeholder-img {
+    background-color: #eee;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.pink-text {
+    color: var(--hot-pink);
+    font-weight: bold;
+}
+
+/* =========================================
+   TOP SECTION LAYOUT (3 Cols)
+========================================= */
+.top-section {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-left {
+    flex: 1;
+}
+
+.col-middle {
+    flex: 2;
+}
+
+.col-right {
+    flex: 1;
+}
+
+/* -- Left Column Specifics -- */
+.profile-top {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.profile-name strong {
+    color: var(--hot-pink);
+    font-size: 1.2rem;
+}
+
+.small-text {
+    font-size: 0.8rem;
+}
+
+.profile-desc {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.tags {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    border: 1px solid var(--hot-pink);
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    background: var(--light-pink);
+}
+
+.playing-content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+}
+
+.song-info {
+    margin-left: 15px;
+    position: relative;
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px dashed var(--hot-pink);
+}
+
+/* Speech Bubble per la musica */
+.speech-bubble {
+    position: absolute;
+    top: -40px;
+    left: -60px;
+    background: white;
+    border: 2px solid #000;
+    padding: 10px;
+    font-family: var(--font-pixel);
+    font-size: 1rem;
+    z-index: 10;
+    box-shadow: 2px 2px 0 #000;
+    /* Un look pixelato */
+    border-image: url('data:image/svg+xml;utf8,<svg ...>') 2;
+    /* Semplificato */
+
+    /* Visibile solo in hover */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.now-playing-box:hover .speech-bubble {
+    opacity: 1;
+    visibility: visible;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    border-width: 10px 10px 0 0;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+}
+
+.speech-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    right: 21px;
+    border-width: 8px 8px 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    z-index: 1;
+}
+
+.cd-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.cd-cover {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 2;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+    background-image: url('img/vinile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cd-disc {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('img/disco.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: -15px;
+    /* Esce un po' fuori dal quadrato rosso */
+    z-index: 1;
+    transition: transform 0.5s ease-in-out;
+    border: 1px solid #999;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cd-disc.playing {
+    animation: spin 2s linear infinite;
+}
+
+.mood-banners {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.banner {
+    height: 30px;
+}
+
+.floating-cat {
+    width: 250px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    position: relative;
+    z-index: 5;
+}
+
+/* -- Middle Column Specifics -- */
+.welcome-box {
+    overflow: visible;
+}
+
+.welcome-box .box-content {
+    padding: 30px;
+    line-height: 1.6;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.welcome-img {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.note {
+    font-size: 0.8rem;
+    font-family: var(--font-pixel);
+    background: #eee;
+    padding: 2px;
+    margin: 0px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.dino-box .box-content {
+    padding: 10px;
+}
+
+#dino-game-container {
+    width: 100%;
+    height: 195px;
+    background: #f7f7f7;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+}
+
+#dinoCanvas {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+.paw-icon {
+    position: absolute;
+    right: 17px;
+    top: -24px;
+    width: 64px;
+    height: auto;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.box-header:hover .paw-icon {
+    animation: pawBounce 0.5s ease-in-out;
+}
+
+@keyframes pawBounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#dino-start-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-pixel);
+    font-size: 1.2rem;
+    color: #535353;
+    pointer-events: none;
+}
+
+/* -- Right Column Specifics -- */
+.calendar-content {
+    text-align: center;
+}
+
+.calendar-table {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.calendar-table th {
+    color: var(--hot-pink);
+}
+
+.current-day {
+    border: 1px solid var(--hot-pink);
+    border-radius: 50%;
+    background: var(--light-pink);
+}
+
+.clap-content {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.stressed-content {
+    padding: 0 !important;
+}
+
+.stressed-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* =========================================
+   DIVIDERS
+========================================= */
+.divider {
+    text-align: center;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heart-icon {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.2));
+}
+
+.scroll-badge {
+    background: white;
+    border: 2px solid var(--box-border);
+    border-radius: 15px;
+    padding: 2px 10px;
+    font-size: 0.8rem;
+    font-family: var(--font-pixel);
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   DIARY SECTION
+========================================= */
+.diary-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.notebook-container {
+    position: relative;
+    width: 900px;
+    height: 500px;
+}
+
+.notebook {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.notebook-cover {
+    flex: 1;
+    background: #ffc0cb;
+    /* pink glitter look */
+    border: 15px solid #d84589;
+    border-radius: 15px;
+    display: flex;
+    padding: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), inset 0 0 50px rgba(255, 255, 255, 0.5);
+    /* Aggiungiamo un pattern per simulare i glitter */
+    background-image: radial-gradient(white 10%, transparent 20%), radial-gradient(white 10%, transparent 20%);
+    background-color: var(--hot-pink);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+}
+
+.page {
+    flex: 1;
+    background: #fff;
+    background-image: repeating-linear-gradient(transparent, transparent 29px, #e0e0e0 30px);
+    background-position: 0 40px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    overflow-y: auto;
+    /* SCROLLABILE SOLO IN QUESTA SEZIONE */
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+.left-page {
+    border-right: 1px solid #ccc;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.right-page {
+    border-left: 1px solid #ccc;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Anelli del quaderno */
+.rings {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    z-index: 10;
+}
+
+.ring {
+    height: 15px;
+    width: 100%;
+    background: linear-gradient(to bottom, #eee, #999, #eee);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Markers (Tabs) */
+.markers {
+    position: absolute;
+    right: -45px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.marker {
+    background: #fff;
+    border: 3px solid var(--box-border);
+    border-left: none;
+    padding: 15px 10px;
+    border-radius: 0 15px 15px 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--font-main);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background 0.2s;
+}
+
+.marker.active {
+    background: var(--light-pink);
+    transform: translateX(10px);
+}
+
+.marker:hover {
+    background: #ffe4e1;
+}
+
+/* Polaroid nello scroller */
+.polaroid {
+    background: white;
+    padding: 10px 10px 30px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    background: #ddd;
+}
+
+
+/* =========================================
+   GUESTBOOK SECTION (MS PAINT)
+========================================= */
+.guestbook-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.ms-paint-window {
+    width: 700px;
+    background: #c0c0c0;
+    /* Classico grigio Windows 98 */
+    border: 2px solid;
+    border-color: #dfdfdf #0a0a0a #0a0a0a #dfdfdf;
+    font-family: 'Pixelated', 'MS Sans Serif', sans-serif;
+    box-shadow: inset 1px 1px #fff, inset -1px -1px #808080;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-bar {
+    background: linear-gradient(to right, #e290b2, #f5d1e0);
+    /* Personalizzato rosa */
+    padding: 3px 2px 3px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.title-bar-controls button {
+    width: 16px;
+    height: 14px;
+    background: #c0c0c0;
+    border: 1px solid #fff;
+    border-right-color: #000;
+    border-bottom-color: #000;
+    margin-left: 2px;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.menu-bar {
+    padding: 2px 5px;
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid #808080;
+    font-size: 0.85rem;
+}
+
+.paint-body {
+    display: flex;
+    flex: 1;
+    padding: 2px;
+    background: #c0c0c0;
+}
+
+.toolbar {
+    width: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 22px;
+    gap: 2px;
+    margin-right: 4px;
+}
+
+.tool {
+    background: #c0c0c0;
+    border: 1px solid #fff;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.tool:active {
+    border-color: #808080 #fff #fff #808080;
+}
+
+.canvas-area {
+    background: white;
+    flex: 1;
+    border: 2px solid #808080;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.guestbook-title {
+    text-align: center;
+    color: var(--hot-pink);
+    font-family: var(--font-pixel);
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.top-inputs input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid var(--box-border);
+    border-radius: 15px;
+    outline: none;
+    font-family: var(--font-main);
+}
+
+.entries-container {
+    flex: 1;
+    min-height: 150px;
+    max-height: 250px;
+    overflow-y: auto;
+    border: 1px dashed var(--box-border);
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #fdf5f8;
+}
+
+#guestbook-entries {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gb-entry {
+    background: white;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.gb-entry strong {
+    color: var(--hot-pink);
+}
+
+.bottom-input {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--box-border);
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.mail-icon {
+    margin-right: 10px;
+}
+
+.bottom-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: var(--font-main);
+}
+
+.send-btn {
+    background: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.send-btn:hover {
+    background: var(--light-pink);
+}
+
+.color-palette {
+    display: flex;
+    padding: 5px;
+    border-top: 1px solid #808080;
+}
+
+.status-bar {
+    display: flex;
+    border-top: 1px solid #808080;
+    padding: 2px 5px;
+    font-size: 0.8rem;
+    gap: 20px;
+}
+
+/* Scrollbar per Webkit */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--hot-pink);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-pink);
+}
+
+/* =========================================
+   SPARKLE / CURSOR GLITTER (Y2K)
+========================================= */
+.sparkle {
+    position: fixed;
+    pointer-events: none;
+    user-select: none;
+    z-index: 99999;
+    font-style: normal;
+    line-height: 1;
+    filter: drop-shadow(0 0 4px currentColor);
+    will-change: transform, opacity;
+}
