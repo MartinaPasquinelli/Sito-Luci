@@ -72,7 +72,7 @@ const diaryData = {
                 <p>
                     N.b. In the purchase I made there were also a<span class="pink-text"> micro-sd</span>. 
                     I used it to create the software of my cyberdeck. 
-                    It was <i>easy</i> to format, anyway you can see how on the tape page, or at this <a class="pink-text" href="#">link here</a>!
+                    It was <i>easy</i> to format, anyway you can see how on the tape page, or at this <a class="pink-text" href="https://www.youtube.com/watch?v=ckT-tLpBnXc&t=124s">link here</a>!
                 </p>
             `
         },
@@ -216,33 +216,33 @@ const diaryData = {
             left: `
             <div class="two-columns-layout">
                 <div class="my-col-left" style="margin-top:5px">   
-                    <img src="img/c1.png">
-                    <img src="img/c2.png" style="margin-top:46px">
-                    <img src="img/b2.png">
+                    <img src="img/c1.png" class="pics">
+                    <img src="img/c2.png" style="margin-top:35px" class="pics">
+                    <img src="img/b2.png" class="pics">
                 </div>
                 <div class="my-col-right" style="margin-top:37px">
-                    <img src="img/b1.png">
-                    <img src="img/c4.png">
-                    <img src="img/c3.png">
+                    <img src="img/b1.png" class="pics">
+                    <img src="img/c4.png" class="pics">
+                    <img src="img/c3.png" class="pics">
                 <div>
-                <img src="img/stelle.png"style="position: absolute;width: 68px;top: 105px;left: 3px;transform: rotate(180deg);">
-                <img src="img/stelle.png"style="position: absolute; width: 60px;top: 448px;left: 288px;">
+                <img src="img/stelle.png"style="position: absolute;width: 68px;top: 105px;left: 3px;transform: rotate(180deg);" class="pics">
+                <img src="img/stelle.png"style="position: absolute; width: 60px;top: 448px;left: 288px;" class="pics">
             </div>
             `,
             right: `
               <div class="two-columns-layout">
                 <div class="my-col-left" style="margin-top:5px">
-                    <img src="img/c5.png">
-                    <img src="img/c9.png" style="margin-top:32px">
-                    <img src="img/c8.png">
+                    <img src="img/c5.png" class="pics">
+                    <img src="img/c9.png" style="margin-top:26px" class="pics">
+                    <img src="img/c8.png" class="pics">
                 </div>
                 <div class="my-col-right" style="margin-top:20px">   
-                    <img src="img/b3.png">
-                    <img src="img/c6.png">
-                    <img src="img/c7.png">
+                    <img src="img/b3.png" class="pics">
+                    <img src="img/c6.png" class="pics">
+                    <img src="img/c7.png" class="pics">
                 </div>
-                <img src="img/bacini.png"style="position: absolute;width: 135px;top: 152px;left: 3px;">
-                <img src="img/bacio.png"style="position: absolute;width: 73px;top: 449px;left: 167px;">
+                <img src="img/bacini.png"style="position: absolute;width: 135px;top: 152px;left: 3px;" class="pics">
+                <img src="img/bacio.png"style="position: absolute;width: 73px;top: 449px;left: 167px;" class="pics">
             </div>
             `
         }
@@ -738,11 +738,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (colMiddle) {
                 colMiddle.innerHTML = `
                     <div class="box-header">ABOUT</div>
-                    <div class="box-content center-text">
-                        <p class="pink-text" style="text-align: left;">Hello there!</p>
-                        <img style="width: 278px;height: 157px" src="gif/hello_there.gif" class="gif" alt="obi one">
-                        <p>This section is dedicated to me!!!<img src="img/slay.png" style="width: 40px;height: 40px; top:13px; position:relative;></p>
-                        <p><br> <br>I'm a little <span class="pink-text">gremlin</span> from 2004 who loves too much things.
+                    <div class="box-content center-text" style="padding-bottom:3px">
+                        <p class="pink-text" style="text-align: left;margin-bottom:0px">Hello there!</p>
+                        <img style="width: 278px;height: 147px" src="gif/hello_there.gif" class="gif" alt="obi one">
+                        <div style="display:flex;margin-bottom:0px"><p style="margin-bottom:0px">This section is dedicated to me!!!</p><img src="img/slay.png" style="width: 40px;height: 40px; top:-5px; position:relative;"></div>
+                        <p style="margin-bottom:2px">I'm a little<span class="pink-text">gremlin</span> from 2004 who loves too much things.
                          Recently I passed from studying tarots, to crocheting, to trying building very cool things 
                          like the totally spies compowder, because duh! Who doesn't want to do it?! So, the whole cyberdeck project, 
                          as well as this website, are the product of my current <span class="pink-text">hyperfixation</span>!</p>
@@ -755,7 +755,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <img src="img/black_cat.png" class="black_cat" alt="gattino nero">
                                 <p style="text-align: right; font-style:italic;">miaomiaomiaomiaomiaomiaomiaomiaomiaomiao</p>
                             </div>
-                            <img style="width: 157px;height: 157px; margin-top: 0px;" src="img/daeni.png" class="gif" alt="Daeneris">
+                            <img style="width: 145px;height: 145px; margin-top: 0px;" src="img/daeni.png" class="gif" alt="Daeneris">
                         </div>
                         <p>
                             I love the <span class="pink-text">old internet</span>, I’ve grown up playing
@@ -784,7 +784,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div> 
                              <img style="width: 260px;height: 153px; margin-top: 0px;" src="img/farquaad.jfif" class="gif" alt="Lord Farquad">
                         </div>
-                        <p>The idea behind this site starts with <span class="pink-text">checking facts</span>.
+                        <p style="margin-bottom: 13px;">The idea behind this site starts with <span class="pink-text">checking facts</span>.
                         We live in Varoufakis’s technofeudalism,a system where we are the <span class="pink-text">serfs of Big Techs</span> that drain our time and emotions. 
                         The fix? <span class="pink-text">Use the tech to hack the tech.</span></p>
                        <div class="katniss-text">   

@@ -6,6 +6,7 @@
 }
 
 :root {
+    cursor: url('img/pointer.png'), auto;
     --pink-bg: #ffb6c1;
     --hot-pink: #D62584;
     --dark-pink: #d84589;
@@ -434,13 +435,65 @@ header {
     height: 30px;
 }
 
+.pics {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.pics:hover {
+    transform: scale(1.10);
+}
+
 .floating-cat {
     width: 250px;
     height: auto;
-    margin: 20px auto;
     display: block;
     position: relative;
     z-index: 5;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.floating-cat:hover {
+    transform: scale(1.15);
+}
+
+.mici_nav_left {
+    animation: gentleRotateLeft 1s ease-in-out infinite;
+}
+
+.mici_nav_right {
+    animation: gentleRotateRight 1s ease-in-out infinite;
+}
+
+@keyframes gentleRotateLeft {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(30deg) scale(1.1);
+        /* Ruota di 30 gradi a metà animazione */
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes gentleRotateRight {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(-30deg) scale(1.1);
+        /* Ruota di 30 gradi a metà animazione */
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
 }
 
 /* -- Middle Column Specifics -- */
@@ -470,7 +523,7 @@ header {
     position: absolute;
     width: 55px;
     height: 55px;
-    top: 892px;
+    top: 861px;
     left: 460px;
 }
 
@@ -506,7 +559,7 @@ header {
     height: 195px;
     background: #f7f7f7;
     position: relative;
-    cursor: pointer;
+    cursor: url('img/pointer_heand.png'), pointer;
     outline: none;
     overflow: hidden;
 }
@@ -635,6 +688,12 @@ header {
     font-size: 2rem;
     margin-bottom: 5px;
     filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.heart-icon:hover {
+    transform: scale(1.15);
 }
 
 .scroll-badge {
@@ -711,12 +770,13 @@ header {
     border: 2px solid var(--hot-pink);
     border-radius: 26px;
 
-    cursor: pointer;
+    cursor: url('img/pointer_heand.png'), pointer;
     font-family: var(--font-main);
     font-size: 18px;
     color: #111;
     box-shadow: inset -3px -3px 4px #FFCAE4, inset 6px 0px 4px #FFCAE4;
-    transition: none;
+    transition: transform 0.3s ease-in-out;
+
 }
 
 .button-link:hover {

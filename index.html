@@ -19,7 +19,7 @@
             </div>
             <nav class="navbar">
                 <div class="cat-left">
-                    <img src="img/gato.png" alt="">
+                    <img src="img/gato.png" class="mici_nav_left">
                 </div>
                 <ul>
                     <li><a href="#" id="nav-home">HOME</a></li>
@@ -28,7 +28,7 @@
                     <li><a href="#" id="nav-tape">TAPE</a></li>
                 </ul>
                 <div class="cat-right">
-                    <img src="img/gato_2.png" alt="">
+                    <img src="img/gato_2.png" class="mici_nav_right">
                 </div>
             </nav>
             <div class="marquee-strip">
@@ -82,8 +82,7 @@
                             <span>- No doubt</span>
                         </div>
                         <!-- Inserisci qui il vero file mp3 -->
-                        <audio id="bg-music" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-                            preload="auto" loop></audio>
+                        <audio id="bg-music" src="music/Just A Girl.mp3" preload="auto" loop></audio>
                     </div>
                 </div>
 
@@ -142,7 +141,7 @@
 
                 <div class="box dino-box">
                     <div class="box-content"
-                        style="padding: 0; height: 200px; overflow: hidden; position: relative;margin-top:-45px">
+                        style="padding: 0; height: 220px; overflow: hidden; position: relative;margin-top:-44px">
                         <iframe src="https://wayou.github.io/t-rex-runner/" frameborder="0" scrolling="no" width="100%"
                             height="200" style="position: absolute; left: 20px; width: calc(100% - 40px);"></iframe>
                     </div>
@@ -179,7 +178,7 @@
         </section>
 
         <div class="divider">
-            <img src="img/cuore.png" alt="Cuoricino">
+            <img src="img/cuore.png" alt="Cuoricino" class="heart-icon">
         </div>
 
         <!-- DIARY SECTION -->
@@ -240,7 +239,7 @@
         </section>
 
         <div class="divider">
-            <img src="img/cuore.png" alt="Cuoricino">
+            <img src="img/cuore.png" alt="Cuoricino" class="heart-icon">
 
         </div>
 
@@ -250,15 +249,6 @@
             <div class="ms-paint-window">
                 <div class="canvas-area">
                     <h3 class="titol">GUESTBOOK</h3>
-                    <div class="pagination-controls pink-text" id="guestbook-pagination"
-                        style="display: none; justify-content: center;">
-                        <button type="button" id="gb-prev-btn" class="pink-text"
-                            style="min-width: 40px;background: transparent;border: none;">&lt;</button>
-                        <span id="gb-page-info"
-                            style="align-self: center; font-size: 13px; font-family: var(--font-main);"></span>
-                        <button type="button" id="gb-next-btn" class="pink-text"
-                            style="min-width: 40px;background: transparent;border: none;">&gt;</button>
-                    </div>
                     <!-- Aggiunto novalidate per disattivare il controllo nativo del browser -->
                     <form id="guestbook-form" novalidate>
                         <div class="form-row top-inputs">
@@ -284,7 +274,15 @@
                                 <!-- Messaggi inseriti tramite JS -->
                             </ul>
                         </div>
-
+                        <div class="pagination-controls pink-text" id="guestbook-pagination"
+                            style="display: none; justify-content: center;">
+                            <button type="button" id="gb-prev-btn" class="pink-text"
+                                style="min-width: 40px;background: transparent;border: none;">&lt;</button>
+                            <span id="gb-page-info"
+                                style="align-self: center; font-size: 13px; font-family: var(--font-main);"></span>
+                            <button type="button" id="gb-next-btn" class="pink-text"
+                                style="min-width: 40px;background: transparent;border: none;">&gt;</button>
+                        </div>
                         <div class="form-row bottom-input">
                             <img src="gif/mail.gif" style="width: 30px;">
                             <input type="text" id="gb-message" style="margin: 2px 8px 2px 8px;"
