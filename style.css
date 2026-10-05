@@ -1297,35 +1297,3 @@ header {
 
     border-radius: 0;
 }
-
-/* Scrollbar per Webkit */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--hot-pink);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--dark-pink);
-}
-
-/* =========================================
-   SPARKLE / CURSOR GLITTER (Y2K)
-========================================= */
-.sparkle {
-    position: fixed;
-    pointer-events: none;
-    user-select: none;
-    z-index: 99999;
-    font-style: normal;
-    line-height: 1;
-    filter: drop-shadow(0 0 4px currentColor);
-    will-change: transform, opacity;
-}

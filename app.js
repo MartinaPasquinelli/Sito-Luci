@@ -670,7 +670,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCalendar(currentDate);
 })();
 
-
+//Navigation logic
 (function () {
     const container = document.querySelector('.container');
     if (!container) return;
@@ -690,12 +690,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = [navHome, navAbout, navBlueprint, navTape].filter(Boolean);
 
 
-
-    // Imposta Home come attiva all'avvio
-    if (navHome) {
-        setActiveNav(navHome);
-    }
-
     // Funzione per ripulire schermate speciali (come Tape) e rimettere la Home
     function showStandardLayout() {
         const existingCustom = document.getElementById('dynamic-content-area');
@@ -710,7 +704,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navHome) {
         navHome.addEventListener('click', (e) => {
             e.preventDefault();
-            setActiveNav(navHome);
+            //setActiveNav(navHome);
             showStandardLayout();
             if (colMiddle) colMiddle.innerHTML = initialHomeContent;
         });
@@ -720,7 +714,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navAbout) {
         navAbout.addEventListener('click', (e) => {
             e.preventDefault();
-            setActiveNav(navAbout);
+            //setActiveNav(navAbout);
             showStandardLayout();
             if (colMiddle) {
                 colMiddle.innerHTML = `
@@ -756,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navBlueprint) {
         navBlueprint.addEventListener('click', (e) => {
             e.preventDefault();
-            setActiveNav(navBlueprint);
+            //setActiveNav(navBlueprint);
             showStandardLayout();
             if (colMiddle) {
                 colMiddle.innerHTML = `
@@ -799,7 +793,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navTape) {
         navTape.addEventListener('click', (e) => {
             e.preventDefault();
-            setActiveNav(navTape);
+            //setActiveNav(navTape);
 
             // Nasconde completamente la home
             if (homeContent) homeContent.style.display = 'none';
