@@ -226,7 +226,7 @@ const diaryData = {
                     <img src="img/c3.png" class="pics">
                 <div>
                 <img src="img/stelle.png"style="position: absolute;width: 68px;top: 105px;left: 3px;transform: rotate(180deg);" class="pics">
-                <img src="img/stelle.png"style="position: absolute; width: 60px;top: 448px;left: 288px;" class="pics">
+                <img src="img/stelle.png"style="position: absolute; width: 60px;top: 448px;left: 288px;" >
             </div>
             `,
             right: `
@@ -241,8 +241,8 @@ const diaryData = {
                     <img src="img/c6.png" class="pics">
                     <img src="img/c7.png" class="pics">
                 </div>
-                <img src="img/bacini.png"style="position: absolute;width: 135px;top: 152px;left: 3px;" class="pics">
-                <img src="img/bacio.png"style="position: absolute;width: 73px;top: 449px;left: 167px;" class="pics">
+                <img src="img/bacini.png"style="position: absolute;width: 135px;top: 152px;left: 3px;">
+                <img src="img/bacio.png"style="position: absolute;width: 73px;top: 449px;left: 167px;">
             </div>
             `
         }
@@ -733,8 +733,10 @@ document.addEventListener('DOMContentLoaded', () => {
                                 the only difference is that my dragons throw 
                                 up balls of fur instead of breathing fire.
                                 </p>
-                                <img src="img/black_cat.png" class="black_cat" alt="gattino nero">
-                                <p style="text-align: right; font-style:italic;">miaomiaomiaomiaomiaomiaomiaomiaomiaomiao</p>
+                                <div style="display: flex; flex-direction: row;align-items: center;">
+                                    <img src="img/black_cat.png" class="black_cat" alt="gattino nero">
+                                    <p style="text-align: right; font-style:italic; margin-bottom: 0px;">miaomiaomiaomiaomiaomiaomiaomiaomiaomiao</p>
+                                </div>
                             </div>
                             <img style="width: 145px;height: 145px; margin-top: 0px;" src="img/daeni.png" class="gif" alt="Daeneris">
                         </div>
