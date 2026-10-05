@@ -6,7 +6,6 @@
 }
 
 :root {
-    cursor: url('img/pointer.png'), auto;
     --pink-bg: #ffb6c1;
     --hot-pink: #D62584;
     --dark-pink: #d84589;
@@ -20,6 +19,7 @@
 }
 
 body {
+    cursor: url('img/pointer.png'), auto;
     margin: 0;
     padding: 0;
     font-family: var(--font-main);
@@ -38,6 +38,16 @@ body {
 p {
     margin-top: 0px;
     text-align: left;
+
+}
+
+a {
+    cursor: url('img/pointer_hand.png'), pointer;
+
+}
+
+button {
+    cursor: url('img/pointer_hand.png'), pointer;
 
 }
 
@@ -148,11 +158,11 @@ header {
     font-weight: 400;
     font-size: 32px;
     line-height: 25px;
-
 }
 
 .navbar a:hover {
     color: var(--hot-pink);
+    text-decoration: underline;
 }
 
 .marquee-strip {
@@ -334,10 +344,12 @@ header {
     align-items: center;
     position: relative;
     padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
 }
 
 .song-info {
-    margin-left: 30px;
+    margin-left: 8px;
     position: relative;
     z-index: 3;
     padding: -5px 10px;
@@ -373,6 +385,7 @@ header {
 
 .cd-container {
     position: relative;
+    justify-content: space-between;
     width: 74px;
     height: 74px;
     display: flex;
@@ -402,7 +415,7 @@ header {
     background-size: cover;
     background-position: center;
     position: absolute;
-    right: -35px;
+    right: -25px;
     /* Esce un po' fuori dal quadrato rosso */
     z-index: 1;
     transition: transform 0.5s ease-in-out;
@@ -559,7 +572,7 @@ header {
     height: 195px;
     background: #f7f7f7;
     position: relative;
-    cursor: url('img/pointer_heand.png'), pointer;
+    cursor: url('img/pointer_hand.png'), pointer;
     outline: none;
     overflow: hidden;
 }
@@ -684,17 +697,6 @@ header {
     align-items: center;
 }
 
-.heart-icon {
-    font-size: 2rem;
-    margin-bottom: 5px;
-    filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.2));
-    transition: transform 0.3s ease-in-out;
-}
-
-
-.heart-icon:hover {
-    transform: scale(1.15);
-}
 
 .scroll-badge {
     background: white;
@@ -770,7 +772,7 @@ header {
     border: 2px solid var(--hot-pink);
     border-radius: 26px;
 
-    cursor: url('img/pointer_heand.png'), pointer;
+    cursor: url('img/pointer_hand.png'), pointer;
     font-family: var(--font-main);
     font-size: 18px;
     color: #111;
@@ -876,7 +878,6 @@ header {
     font-size: 1.3rem;
     line-height: 1;
     color: #000;
-    cursor: pointer;
     transition: background 0.2s;
     white-space: nowrap;
 }
@@ -937,7 +938,6 @@ header {
     color: var(--text-color);
     font-family: var(--font-main);
     font-size: 1.1rem;
-    cursor: pointer;
     transition: color 0.2s;
     padding: 0;
     opacity: 0.8;
@@ -962,7 +962,6 @@ header {
     position: relative;
     width: 44px;
     height: 123px;
-    cursor: pointer;
 
     display: flex;
     flex-direction: column;
@@ -1124,7 +1123,6 @@ header {
 
     line-height: 1;
     color: var(--text-color) !important;
-    cursor: pointer;
     transition: background 0.2s;
     white-space: nowrap;
 }
@@ -1217,8 +1215,7 @@ header {
     background: white;
     border: 2px solid var(--hot-pink);
     border-radius: 12px;
-    ;
-    cursor: pointer;
+
     font-family: var(--font-main);
     font-size: 18px;
     color: #111;

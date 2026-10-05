@@ -553,7 +553,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button
                     id="prev-month"
                     style="
-                        cursor:pointer;
                         background:none;
                         border:none;
                         font-size:16px;
@@ -567,7 +566,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button
                     id="next-month"
                     style="
-                        cursor:pointer;
                         background:none;
                         border:none;
                         font-size:16px;
@@ -691,18 +689,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const navLinks = [navHome, navAbout, navBlueprint, navTape].filter(Boolean);
 
-    // Funzione per aggiornare lo stile attivo della navbar
-    function setActiveNav(activeLink) {
-        navLinks.forEach(link => {
-            if (link === activeLink) {
-                link.classList.add('pink-text');
-                link.style.textDecoration = 'underline';
-            } else {
-                link.classList.remove('pink-text');
-                link.style.textDecoration = 'none';
-            }
-        });
-    }
+
 
     // Imposta Home come attiva all'avvio
     if (navHome) {
