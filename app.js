@@ -1,6 +1,6 @@
 // Contenuti fittizi per i tab del diario
 const diaryData = {
-    links: [
+    diary: [
         {
             left: `
                 <p><span class="pink-text">PHASE 1: THE IDEA</span><br>
@@ -211,7 +211,7 @@ const diaryData = {
             `
         }
     ],
-    diary: [
+    pics: [
         {
             left: `
             <div class="two-columns-layout">
@@ -247,7 +247,7 @@ const diaryData = {
             `
         }
     ],
-    tips: [
+    links: [
         {
             left: `
                 <div class="two-columns-layout">
@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollLeftBtn = document.getElementById('scroll-left-btn');
     const scrollRightBtn = document.getElementById('scroll-right-btn');
 
-    let currentTabId = 'links';
+    let currentTabId = 'diary';
     let currentPageIndex = 0;
 
     // Funzione per aggiornare il contenuto
@@ -324,9 +324,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 nextBtn.style.visibility = currentPageIndex < pages.length - 1 ? 'visible' : 'hidden';
             }
 
-            // Mostra l'intera riga `.scroll-btn-row` e abilita lo scroll SOLO nella scheda 'links'.
+            // Mostra l'intera riga `.scroll-btn-row` e abilita lo scroll SOLO nella scheda 'diary'.
             // Per 'diary' e 'tips' nascondi completamente la riga e disattiva lo scroll.
-            if (currentTabId === 'links') {
+            if (currentTabId === 'diary') {
                 scrollBtnRows.forEach(row => row.style.display = 'flex');
                 postit.style.display = 'flex';
                 pageNavBottom.style.display = 'flex';
@@ -345,13 +345,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inizializza con il primo tab
     updateDiary();
 
+
     markers.forEach(marker => {
-        marker.addEventListener('click', (e) => {
-            currentTabId = marker.getAttribute('data-tab');
-            currentPageIndex = 0; // reset to first page of the new tab
+        marker.addEventListener('click', () => {
+            const tabId = marker.getAttribute('data-tab');
+
+            // Se clicco su Tape, apro la schermata Tape della navbar
+            if (tabId === 'tapes') {
+                const navTape = document.getElementById('nav-tape');
+
+                if (navTape) {
+                    navTape.click();
+                }
+
+                return;
+            }
+
+            // Per Diary, Pics e Links aggiorno il contenuto del diario
+            if (!diaryData[tabId]) {
+                console.error('Scheda non trovata in diaryData:', tabId);
+                return;
+            }
+
+            currentTabId = tabId;
+            currentPageIndex = 0;
             updateDiary();
         });
     });
+
 
     // Frecce navigazione per scorrere le pagine all'interno del tab
     const prevBtn = document.querySelector('.prev-page-btn');
@@ -512,8 +533,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const calendarContainer = document.getElementById('calendar-container');
     if (!calendarContainer) return;
 
-    // Mese iniziale: Novembre 2026
-    let currentDate = new Date(2026, 10, 1);
+    let currentDate = new Date();
+    currentDate.setDate(1);
 
     function renderCalendar(date) {
         const year = date.getFullYear();
