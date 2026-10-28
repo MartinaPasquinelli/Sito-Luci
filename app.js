@@ -738,7 +738,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <p style="text-align: right; font-style:italic; margin-bottom: 0px;">miaomiaomiaomiaomiaomiaomiaomiaomiaomiao</p>
                                 </div>
                             </div>
-                            <img style="width: 145px;height: 145px; margin-top: 0px;" src="img/daeni.png" class="gif" alt="Daeneris">
+                            <img style="width: 140px;height: 145px; margin-top: 0px;" src="img/daeni.png" class="gif" alt="Daeneris">
                         </div>
                         <p>
                             I love the <span class="pink-text">old internet</span>, I’ve grown up playing
