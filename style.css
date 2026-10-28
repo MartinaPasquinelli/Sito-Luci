@@ -87,8 +87,8 @@ header {
 .logo-img {
     max-width: 400px;
     height: auto;
-    filter: drop-shadow(4px 4px 0px var(--hot-pink)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
-    animation: float 3s ease-in-out infinite;
+    /*filter: drop-shadow(4px 4px 0px var(--hot-pink)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));*/
+    /* animation: float 3s ease-in-out infinite;*/
 }
 
 @keyframes float {
@@ -989,7 +989,7 @@ header {
     text-align: center;
 }
 
-.marker:hover:not(.active) {
+.marker:hover {
     transform: translateX(-5px)rotate(180deg);
 }
 
@@ -1005,11 +1005,6 @@ header {
     z-index: 1;
 }
 
-/* Quando il marker è attivo, rimane attaccato e sporge leggermente di più */
-.marker.active {
-    transform: translateX(10px) rotate(180deg);
-    z-index: 10;
-}
 
 /* Elementi HTML nascosti perché già nell'immagine diario.png */
 .rings,
