@@ -12,7 +12,7 @@
     --light-pink: #ffe4e1;
     --box-bg: #ffffff;
     --box-border: #D62584;
-    --text-color: #333;
+    --text-color: #000000;
     --button-grey: rgba(255, 255, 255, 0.15);
     --font-main: 'Monogram', 'Pixelify Sans', sans-serif;
     /* Y2K vibe */
@@ -38,7 +38,8 @@ body {
 p {
     margin-top: 0px;
     text-align: left;
-
+    margin-bottom: 13px;
+    color: black;
 }
 
 a {
@@ -69,6 +70,11 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cuore {
+    width: auto;
+    height: 152px;
 }
 
 /* =========================================
@@ -185,7 +191,7 @@ header {
     display: inline-block;
     color: #ffffff;
     font-family: var(--font-main);
-    font-size: 1.1rem;
+    font-size: 26px;
     letter-spacing: 4px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
@@ -211,7 +217,7 @@ header {
     border-radius: 17px;
     margin-bottom: 20px;
     overflow: hidden;
-    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 0px 6px 0px #FFCAE4 inset, -6px -6px 6px 0px #FFCAE4 inset;
 }
 
 .box-header {
@@ -232,6 +238,7 @@ header {
     box-shadow: inset -2px -2px 4px #D62584,
         inset 2px 2px 4px #FFFFFF;
 }
+
 
 .box-content {
     padding: 15px;
@@ -261,8 +268,8 @@ header {
     /* Centra perfettamente l'intera sezione nella pagina */
     padding: 0 120px;
     /* Aggiunge lo spazio (padding) ai lati per non farla attaccare allo schermo */
-    align-items: flex-start;
-    /* Allinea tutte le colonne in alto */
+    align-items: stretch;
+    /* Allinea tutte le colonne alla stessa altezza */
     box-sizing: border-box;
     /* Assicura che il padding sia incluso nel calcolo della larghezza */
 }
@@ -270,7 +277,6 @@ header {
 .col {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     /* Spaziatura uniforme tra i box verticali */
 }
 
@@ -285,6 +291,43 @@ header {
 
 .col-right {
     flex: 1;
+}
+
+/* Ultimo box di ogni colonna cresce per allineare i bordi inferiori */
+.col-left .mood-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-left .mood-box .box-content {
+    flex: 1;
+}
+
+.col-middle .dino-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-middle .dino-box .box-content {
+    flex: 1;
+}
+
+.col-right .stressed-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.col-right .stressed-box .stressed-content {
+    display: flex;
+    align-items: stretch;
+}
+
+.col-right .stressed-box .stressed-img {
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Assicura che il primo box a sinistra non abbia margini superiori strani */
@@ -512,6 +555,7 @@ header {
 /* -- Middle Column Specifics -- */
 .main-box {
     overflow: visible;
+    height: 613px;
 }
 
 .main-box .box-content {
@@ -527,7 +571,6 @@ header {
 .gif {
     width: 218px;
     height: 218px;
-    margin-top: 20px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -538,14 +581,17 @@ header {
 
 .katniss-text {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .katniss-text img {
-    float: right;
-    width: 50%;
-    max-width: 410px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    float: none;
+    width: 100%;
+    max-width: 380px;
+    margin: 6px auto;
     border-radius: 12px;
 }
 
@@ -672,6 +718,12 @@ header {
 }
 
 
+.stressed-box .box-header {
+    font-size: 28px;
+    line-height: 0.8;
+    padding: 8px 6px;
+}
+
 .stressed-content {
     padding: 0 !important;
 }
@@ -787,21 +839,22 @@ header {
 ========================================= */
 .diary-postit {
     position: absolute;
-    top: -120px;
-    left: 13px;
-    width: 282px;
-    height: 199px;
+    top: -108px;
+    left: 52px;
+    width: 229px;
+    height: 171px;
     background-image: url(img/postit.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 363px;
+    background-size: 100% 100%;
     z-index: 10;
     font-family: var(--font-main);
-    font-size: 1.2rem;
+    font-size: 20px;
+    line-height: 1.25;
     color: #000;
-    padding: 48px 51px;
+    padding: 42px 36px 36px 36px;
     box-sizing: border-box;
-    text-align: right;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -832,7 +885,7 @@ header {
 .page {
     position: absolute;
     top: 6%;
-    height: 84%;
+    height: 88%;
     /* da 6% a 90% del notebook */
     background: transparent;
     border: none;
@@ -926,17 +979,27 @@ header {
     justify-content: flex-end;
 }
 
+.phase-heading {
+    color: #D62584 !important;
+    font-size: 24px;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
 .diary-nav-btn {
     background: transparent;
     display: flex;
     align-items: center;
+    gap: 6px;
     border: none;
-    color: var(--text-color);
+    color: #9F9F9F;
     font-family: var(--font-main);
-    font-size: 1.1rem;
+    font-size: 1.17rem;
     transition: color 0.2s;
     padding: 0;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /* =========================================
@@ -979,13 +1042,14 @@ header {
     position: relative;
     z-index: 2;
     font-family: var(--font-main);
-    font-size: 1.2rem;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding-top: 15px;
     line-height: 1;
     color: #000;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    /* scritto dall'alto verso il basso */
     text-align: center;
 }
 
@@ -1064,15 +1128,19 @@ header {
     margin-bottom: 5px;
     font-size: 1.2rem;
     font-family: var(--font-main);
-    color: var(--hot-pink);
+    color: #D62584 !important;
+}
+
+.gb-text {
+    color: #9F9F9F !important;
 }
 
 .canvas-area {
     position: absolute;
     top: 92px;
     left: 112px;
-    width: 648px;
-    height: 355px;
+    width: 650px;
+    height: 371px;
     background: transparent;
     border: none;
     padding: 0;
@@ -1118,8 +1186,11 @@ header {
     white-space: nowrap;
 }
 
+
+
+
 .top-inputs input::placeholder {
-    color: rgba(214, 37, 132, 0.5);
+    color: #9F9F9F;
 }
 
 .top-inputs input:focus {
@@ -1148,27 +1219,22 @@ header {
     margin-bottom: 8px;
     border: none;
     background: rgba(255, 255, 255, .25);
-    border-bottom: 1px dashed rgba(214, 37, 132, .35);
+    border-bottom: 1px dashed rgba(159, 159, 159, .4);
     font-size: 23px;
-    color: #333;
+    color: #555;
 }
 
 .gb-entry strong {
-    color: var(--hot-pink);
+    color: #D62584;
 }
 
 .bottom-input {
     align-items: center;
-
     gap: 8px;
-
     width: 100%;
     box-sizing: border-box;
-
     padding: 5px 10px;
-
     border: none;
-
     background: #FFCAE4;
     color: #000000;
     font-family: var(--font-main);
@@ -1182,13 +1248,27 @@ header {
     border-radius: 0 0 12px 12px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    box-shadow: inset -3px -3px 4px #FFCAE4, inset 6px 0px 4px #FFCAE4;
+    justify-content: space-between;
+    box-shadow: inset -2px -2px 4px #D62584, inset 2px 2px 4px #FFFFFF;
+}
 
+.bottom-input input {
+    flex: 1;
+    height: 38px;
+    padding: 6px 13px;
+    margin: 0 !important;
+    border: 2px solid var(--hot-pink);
+    border-radius: 12px;
+    font-family: var(--font-main);
+    font-size: 18px;
+    box-shadow: inset -3px -3px 4px #FFCAE4, inset 6px 0px 4px #FFCAE4;
+    line-height: 1;
+    color: var(--text-color) !important;
+    outline: none;
 }
 
 .bottom-input input::placeholder {
-    color: rgba(214, 37, 132, 0.5);
+    color: #9F9F9F;
 }
 
 .bottom-input input:focus {
@@ -1197,16 +1277,12 @@ header {
 
 .send-btn {
     flex: 0 0 auto;
-
     height: 38px;
     min-width: 62px;
-
     padding: 4px 12px;
-
     background: white;
     border: 2px solid var(--hot-pink);
     border-radius: 12px;
-
     font-family: var(--font-main);
     font-size: 18px;
     color: #111;
@@ -1220,7 +1296,6 @@ header {
 
 .send-btn:active {
     transform: translate(1px, 1px);
-
     box-shadow:
         inset -1px -1px 0 #fff,
         inset 1px 1px 0 #8c1555;
@@ -1229,40 +1304,38 @@ header {
 /* =========================================
    CUSTOM POPUP STYLING (Retro/Win95)
 ========================================= */
-/* Contenitore relativo per ancorare il fumetto sopra l'input */
 .input-tooltip-container {
     position: relative;
     flex: 1;
     display: flex;
-
 }
 
-/* Stile del fumetto pixelato basato sulla tua immagine */
 .pixel-bubble {
     position: absolute;
     bottom: calc(100% + 5px);
-    /* Appena sopra l'input */
-    left: 0;
-    width: 155px;
-    /* Modifica la larghezza se serve in base alle proporzioni dell'immagine */
+    left: 30px;
+    width: 175px;
     height: 75px;
-    /* Modifica l'altezza in base alla tua immagine popup.png */
     background: url('img/popup.png') no-repeat center center;
     background-size: 100% 100%;
-
-    /* Regolazioni per centrare il testo dentro la nuvoletta dell'immagine */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 12px 20px 12px;
-    /* Spaziatura interna per evitare che il testo esca dalla nuvoletta */
     box-sizing: border-box;
-
-    /* Font in stile con il tuo sito */
     font-family: var(--font-main);
     font-size: 16px;
     color: #000;
-    z-index: 10;
+    z-index: 100;
+}
+
+.sparkle {
+    position: fixed !important;
+    pointer-events: none !important;
+    user-select: none !important;
+    z-index: 9999 !important;
+    line-height: 1;
+    will-change: transform, opacity;
 }
 
 /* =========================================================

@@ -3,210 +3,208 @@ const diaryData = {
     diary: [
         {
             left: `
-                <p><span class="pink-text">PHASE 1: THE IDEA</span><br>
+                <p><span class="phase-heading">PHASE 1: THE IDEA</span><br>
                     One day I was scrolling on Titktok and I found this <span class="pink-text">reel about creating a 
-                    pc inside a purse</span> recreating the aesthetic of mermaids. 
-                    I was stunned! So I decided I wanted to create one of my self.
-                    <i>MAN, it look so easy when it's in reel form in speed x2. </i></p>
-                
-                <P>Anyway, so I <i>stalked</i>the profile of the content creator (Ube Boobey) 
-                    and I found the whole video on yt (<a class="pink-text" href="https://www.youtube.com/watch?v=aumh4oknVuM&t=106s">check here!</a>). It's really well made, 
-                    there are all the links to the products. I found it really fascinating because
-                    the girl had <span class="pink-text">0 previous experience</span> and yet she managed to assemble all the component! 
-                    The worst part is when you have too much <span class="pink-text">cables</span> and they're too long. 
-                    DAMN IF IT HITS HARD!</p> 
-
+                    pc inside a purse</span> with the shape of a shell and the aesthetic of a mermaid.
+                    I was stunned! So I decided I wanted to create one of self.
+                    <i>MAN, it look so easy when it's in reel form at speed x2. </i>
+                </p>
+                <P>Anyway, I <i>stalked</i>the profile of the content creator (Ube Boobey) 
+                    and I found the whole video on yt (<a class="pink-text" href="https://www.youtube.com/watch?v=aumh4oknVuM&t=106s">check here!</a>). It's really well made 
+                    and in the description there are all the links to the hardware components she used. I found it really fascinating because
+                    the girl had <span class="pink-text">0 previous experience</span> and yet she managed to assemble the pc giving it the vibes she wanted!
+                </p> 
                 <p>Ube Boobey decided to make a pc running on a Raspberry pi 2,
                     but I wanted a pc that worked a little better and more suitable for 
-                    a even more begginer in this field like me. I searched for a <span class="pink-text">Raspberry pi 5</span>. 
-                    I was undecided on which online platform to use to buy the tech components. 
-                    I asked a friend of my dad who knows everything about this kind of projects
-                    and he suggested me <span class="pink-text">Amazon</span>, I don't like the app but it seems to be the only 
+                    an even more begginer in this field like me. I searched for a <span class="pink-text">Raspberry pi 5</span>.
+                </p>   
+                <p>I was undecided on which online platform to use to buy the tech components. 
+                    I asked a friend who knows everything about this kind of projects
+                    and he suggested <span class="pink-text">Amazon</span>, I don't like the app but it seems to be the only 
                     one that has everything and you can send back the pieces if something is broken 
-                    or doesn't fit.</p>
+                    or doesn't fit.
+                </p>
                 <p>
-                    The whole point was to <span class="pink-text">find a monitor, a raspberry pi 5</span> (the basic component for a diy pc)
-                    and I wanted to had <span class="pink-text">a keyboard, a mic and some speakers and a webcam</span>.
+                    The goal was to find a <span class="pink-text"> monitor</span> and a Raspberry pi 5 (the basic component for a diy pc),
+                    then I added<span class="pink-text">a bluetooth  keyboard, a mic, some speakers and a webcam</span>.
                     As I said, I wanted my pc to be performative as a normal one (<i>or mostly like it</i>).
                 </p>
             `,
             right: `
-                <p><span class="pink-text"> PHASE 2: THE ASSEMBLING </span><br>
+                <p><span class="phase-heading">PHASE 2: THE ASSEMBLING</span><br>
                     I found everything I needed and ordered it. 
-                    I was so nervous to take the pieces out of their packaging because in my mind <span class="pink-text">electronic 
-                    is so vulnerable</span>, like, what if I accidentally broke a microchip or stuff like this?! 
+                    I was so nervous to take the pieces out of their packaging because in my mind <span class="pink-text">electronics are so vulnerable 
+                    </span>, like, what if I accidentally broke a microchip or stuff like this?! 
                 </p>
                 <p>
                     Anyway, after a week I was throwing them on the bed like my phone. 
                     But I was still worried about <span class="pink-text">MY CATS!</span> They are two males and a female. 
-                    This little demonic beast with the cutest face and 'miao' I ever heard, the female leader 
-                    of my house, a little dictator bored by the insulsiness of her brothers, 
+                    This little demonic beast with the cutest face and "miao" I ever heard, the female leader 
+                    of my house, a little dictator bored by the uselessness of her brothers,
                     has this unique way to get attention by <span class="pink-text">THROWING THINGS FROM SHELVES</span>. 
                 </p>
                 <p>
                     Now, I share my bedroom with my sister and we have this desk with above it 3 
-                    shelves and the last one is of my sister. One day, I heard something falling 
-                    in my room and when I went there I found out that THE LITTLE CUTEST FUR MONSTER I EVER MET 
+                    shelves and the last one is hers. One day, I heard something falling in my room and  
+                    when I went there I found out that THE LITTLE CUTEST FUR MONSTER I EVER MET
                     had <span class="pink-text">thrown a ROCK</span> (<i>my sister collects them</i>), 
                     <span class="pink-text">A GIANT ONE</span>, from the top of the last shelf and 
                     <i>IT MISSED MY ELECTRONIC COMPONENTS JUST BOUGHT FOR INCHES, INCHESSS!!!</i> I almost fainted. 
                 </p>
                 <p>
-                    After that day I decided that was time to build the whole thing as soon as possible. 
-                    I spent two mornings with the friend of my dad connecting all the cables and trying the whole thing, 
-                    if it was able to work or if there were something wrong. 
-                    I must say, I had a great luck and the <span class="pink-text">pc started almost immediately after 
+                    After that day I decided that was time to assemble the whole thing as soon as possible. 
+                    I spent two mornings with the friend I've mentioned before connecting all the cables and trying the whole thing 
+                    in order to see if it was able to work or if there was something wrong. 
+                    I must say, I had great luck and the <span class="pink-text">pc started working almost immediately after 
                     I gave it power.</span> 
                 </p>
                 <p>
-                    The <span class="pink-text">main problem</span> where the <span class="pink-text">speakers and the webcam</span>. 
-                    The first ones where definitely too big, the second one wasn't matching with the insert on the monitor. 
+                    The <span class="pink-text">main problem</span> were <span class="pink-text">the speakers and the webcam</span>. 
+                    The first ones were definitely too big, the second one wasn't matching with the insert on the monitor.
                     So I had to send them back and get smaller ones, more comfortable. 
-                    The idea was to get both of the USB so that I could easly connect them to the raspberry pi.
+                    The idea was to get both of them with USB cables so that I could easily connect them to the Raspberry Pi.
                 </p>
                 <p>
-                    I forgot to tell that I also bought a sort of <span class="pink-text">protective case for the raspberry</span> 
-                    with a fan that could cold-off the whole system. The new pieces where perfect match for the others. 
-                    So in a few weeks I ended up having the<i> skeleton and organs</i> of my diy pc.
+                    I forgot to tell you that I also bought a sort of <span class="pink-text">protective case for the Raspberry</span> 
+                    with a fan that could cool-off the whole system. The new pieces were perfect match for the others. 
+                    So in a few weeks I ended up having <i>the organs</i> of my diy pc built in the right place.
                 </p>
                 <p>
-                    N.b. In the purchase I made there were also a<span class="pink-text"> micro-sd</span>. 
-                    I used it to create the software of my cyberdeck. 
-                    It was <i>easy</i> to format, anyway you can see how on the tape page, or at this <a class="pink-text" href="https://www.youtube.com/watch?v=ckT-tLpBnXc&t=124s">link here</a>!
+                    N.b. In the purchase I made there was also a<span class="pink-text"> micro-sd</span>. 
+                    I used it to install the software of my cyberdeck. 
+                    It was easy to format, anyway you can see how on the tape page, or at this <a class="pink-text" href="https://www.youtube.com/watch?v=ckT-tLpBnXc&t=124s">link here</a>!
                 </p>
             `
         },
         {
             left: `
-                <p><span class="pink-text"> PHASE 3: THE CASE </span><br>
-                    Now I had to decide where to put the whole thing and build the muscular structure of my cyberdeck. 
-                    I saw this really really cute pic of a <span class="pink-text"> purse</span> with the motherboard of the monitor in sight that was <span class="pink-text">trasparent</span>. 
-                </p>
+                <p><span class="phase-heading">PHASE 3: THE CASE</span><br>
+                   Now I had to decide where to put the whole thing and build the bones structure of my cyberdeck.
+                    I saw this really really cute pic of a <span class="pink-text">transparent purse</span>
+                    with the motherboard of the monitor in sight, so I decided to start searching online for it. 
                 <p>
-                    So I decided to start searching online for it. I forgot to tell that obviously 
-                    I had the <span class="pink-text">dimensions</span> of the whole components assembled<span class="pink-text"> to keep in mind</span>, 'cause they would'nt fit either way. 
-                    <i>Guess what?</i> ALL THE DAMN TRASPARENT PURSE WERE <span class="pink-text">TOO SMALL!!!</span> 
-                </p>
-                <p>
-                    I swear, it was so frustrating, but the most irritating thing was that they were smaller<span class="pink-text"> for some centimetres</span>. 
-                    So I tried to look out for other purses, I wanted a clutch one with the chain, but same story of the trasparent one. 
+                    I forgot to say that obviously I had <span class="pink-text">to keep in mind the dimensions </span> 
+                    of the whole components assembled, 'cause otherwise they wouldn't fit.
+                    <i>Guess what?</i> ALL THE DAMN TRANSPARENT PURSE WERE TOO SMALL!!!
+                    I swear, it was so frustrating, but the most irritating thing was that they were <span class="pink-text"> smaller by a few centimeters</span>. 
+                   So I tried to look out for other purses. I wanted one with a clutch closure, but it was the same story as the transparent one. 
                     <i>I was exhausted.</i> 
                 </p>
                 <p>
-                    I scrolled on my phone looking thousands of purse for hours. So I decided to go to the shopping centre in my town. 
-                    <span class="pink-text">It was a total débâcle</span>. I spent <i>4 DAMN HOURS</i> with my boyfriend searching on every possible store and we found <span class="pink-text">NOTHING.</span> 
+                    I scrolled on my phone looking for thousands of purses for hours. So I decided to go to the shopping centre in my town.  
+                    <span class="pink-text">It was a total débâcle</span>. I spent <i>4 DAMN HOURS</i>with my boyfriend searching every possible store and we found <span class="pink-text">NOTHING.</span> 
                 </p>
                 <p>
-                    At the end I got the idea to use a <span class="pink-text">jewelry box</span>. So I searched it on amazon and guess what? I found it. 
-                    I felt like the little girl of <i> Goldilocks and the Three Bears</i> saying 'it's too hot', 'it's too cold', 'it's not black enough', 'it has not the silver clutch' and blah blah blah. 
-                    But at the end I satisfied my desire and bought a jewelry box, small enough and big enough at the same time, <span class="pink-text">black and with a silver clutch</span>. Because it was more 'elegant' (shut up lucia!)
+                    At the end I got the idea to use a jewelry box. So I searched it on amazon and guess what? 
+                    I found it. I felt like the little girl of <i> Goldilocks and the Three Bears</i> saying "it's too hot", "it's too cold", "it's not black enoug", "It doesn't have the silver clutch" and blah blah blah. 
+                    But in the end I satisfied my desire and bought a jewelry box, small enough and big enough at the same time, <span class="pink-text">black and with a silver clutch</span>.
+                    I wanted the case that way because it was more "elegant" (shut up lucia!).
                 </p>
             `,
             right: `
-                <p><span class="pink-text"> PHASE 4: THE STRUCTURAL BUILDING </span><br>
-                    That was another funny part, but not funny 'ahah', funny <i>'weird'</i>. 
-                    I bought <span class="pink-text">black sheet of pvc</span> to build the mask in which fit the single components. 
-                    And I devided them in<span class="pink-text"> two parts</span>: the <span class="pink-text">top one</span> with <span class="pink-text">monitor, webcam, speakers</span> and the <span class="pink-text">bottom one</span> with the <span class="pink-text">keyboard</span> and the<span class="pink-text"> raspberry pi</span>. 
+                <p><span class="phase-heading">PHASE 4: THE STRUCTURAL BUILDING</span><br>
+                    Building the effective structure of the cyberdeck was another funny part, but not funny "ahah", funny  <i>"OMG, I'm dying"</i>. 
+                    I bought <span class="pink-text">black sheet of pvc</span> to build the support of the components. 
+                    I divided the case in<span class="pink-text"> two parts: the top one</span> with the <span class="pink-text">monitor</span> the webcam and the mic/speakers, and <span class="pink-text">the bottom one</span> with the keyboard and the<span class="pink-text"> Raspberry pi</span>. 
                 </p>
                 <p>
                     Taking the right measures was like going through<span class="pink-text"> giving birth</span>. 
                     I was on the verge of a second breakdown! I SWEAR sometimes math is too much. 
                     But not the one with letterls and absurd process, no, the one of <i>2+2 and 3x3</i>.
-                </p>
-                <p>
                     I'm not a precise person so I kinda cheated and asked my boyfriend for help (I was like <span class="pink-text">Ratatouille guiding the work</span> through his hair). 
-                    I created the <span class="pink-text">two masks cutting off</span> the pieces right enough just to make the components <span class="pink-text">fit</span> in (obviously with some small errors because <i>it's diy duh!</i>). 
+                    It was kinda easy in the end <i>(laughing hysterically)</i>. 
                 </p>
                 <p>
-                    It was kinda easy in the end (<i>laughing histerically</i>). 
-                    The <span class="pink-text">top</span> part ended up being a sort of <span class="pink-text">cheddar cheese</span> with holes for the monitor and the other stuff. 
-                    Instead, I thought that maybe all the <span class="pink-text">cables must be hidden</span> somewhere so in the end I had to build a sort of <span class="pink-text">box</span> in which put the raspberry pi with all the vicious stuff it brought with itself. 
-                    And I thought: 'why don't i make a sort of raised ground floor where I'll put the keyboard, so it is easy to take it out! 
+                    The <span class="pink-text">top</span> part ended up being a sort of <span class="pink-text">cheddar cheese</span> with holes for the monitor
+                    and the other stuff. Instead, I thought that maybe all <span class="pink-text">the cables must be hidden</span> 
+                    somewhere so I built a sort of <span class="pink-text">box</span> in which to put the Raspberry Pi with all the 
+                    vicious stuff it brought with itself. Then I thought: "Why don't I make a sort of raised 
+                    ground floor where to put the keyboard, so it is easy to take it out!" My boyfriend 
+                    almost cried in despair. ANYWAY, I printed 4 <span class="pink-text">3D supporters</span> to glue on the walls of 
+                    the jewelry box and on them I glued this sort of <span class="pink-text">L figure</span> that created what I wanted 
+                    for my tiny cutie too much big keyboard. It's a <span class="pink-text">bluetooth</span> keyboard so I had no 
+                    problem with the cables. For the Raspberry Pi I made a <span class="pink-text">cover that could be 
+                    opened</span> and I fixed it to the walls of the box with <i>rivets</i>. Fortunately my boyfriend has 
+                    a garage full of all the diy instruments. 
                 </p>
                 <p>
-                    My boyfriend almost cried in despair. ANYWAY, I print <span class="pink-text">4 3d supporters</span> to glue on the walls of the jewelry box and on top of them I glued this sort of <span class="pink-text">L figures</span> that created what I wanted for my tiny cutie too much big keyboard. It is <span class="pink-text">bluetooth</span> so I had no <span class="pink-text">problem</span> with its <span class="pink-text">cables</span>. 
-                    For the raspberry pi I made a <span class="pink-text">cover that could be opened</span> and I fixed it to the walls of the box with rivets. 
-                </p>
-                <p>
-                    Fortunaly my boyfriends has a garage of his dad full of al the diy instrument. 
-                    I used the <span class="pink-text">hot glue</span> <i>EVERYWHERE</i>. BUT <span class="pink-text">I'M THE MOTHER OF THE DRAGONS</span> (my cat), THE UNBURNED, QUEEN OF THE SEVEN KINGDOMS- ok I cut it. 
-                    The cables where really too long so i had to tied them up.
+                    I used the <span class="pink-text">hot glue</span> <i>EVERYWHERE</i>. BUT I'M THE MOTHER OF THE DRAGONS (my cat), THE UNBURNED(who got all her fingers burnt at the end of the project), QUEEN OF THE SEVEN KINGDOMS- ok I cut it. 
+                    The cables were too long so I had to tie them up.
                 </p>
             `
         },
         {
             left: `
-                <p><span class="pink-text">PHASE 5: THE BRATZ CHOICE</span><br>
-                    I had the hardest time to choose the <span class="pink-text">aesthetic</span> to give to my cyberdeck, because
-                     I have <i>too much damn interests!</i> So I didn't know what core to pic. 
+                <p><span class="phase-heading">PHASE 5: THE BRATZ CHOICE</span><br>
+                    I had the hardest time choosing the <span class="pink-text">aesthetic</span> to give to my cyberdeck, because
+                     I have <i>too many damn interests!</i> So I didn't know what core to pick. 
                 </p>
                 <p>
-                    But one of my current obsession is all the <span class="pink-text">grunge, y2k style</span> that is kinda turning back. 
-                    There's this kpop group, the <i>Katseye</i>, I mean, if you watch their videos they have super cool outfits! 
-                    And it's this <span class="pink-text">maximalist style</span>, 
+                    But one of my current obsessions is all the <span class="pink-text">grunge, y2k style</span> that is kinda turning back.
+                    There's this kpop group, the Katseye, I mean, if you watch their videos they have super cool outfits! And it's this <span class="pink-text">maximalist style</span>, 
                     and I can't, I just love it. 
                 </p>
                 <p>
-                    And it reminded me of the <span class="pink-text">BRATZ</span>. I was full of barbies but in my heart I loved the bratz most.
-                     So I searched up on pinterest for <span class="pink-text">pics</span> that could be <span class="pink-text">inspiring</span>.
-                      The whole point of bratz aesthetic is using <i>flashy things</i>. 
+                    And it reminded me of the <span class="pink-text">BRATZ</span>. I was full of barbies but in my heart I loved the 
+                    Bratz most. So I searched up on pinterest for pics that could be inspiring. The whole 
+                    point of bratz aesthetics is using
+                    <i>flashy things</i>. 
                 </p>
                 <p>
-                    So I went to this little local shop where my grandma always go to buy the stuff she uses for adjusting clothes or making purses etc, 
-                    and I bought <span class="pink-text">200 strass</span> (<i>on my defend, they were small</i>), <span class="pink-text">a dazzling fabric</span>, <span class="pink-text">a cute rose ribbon</span> and then 
-                    I bought in other places some 3d stickers, <span class="pink-text">a leopard-print faux leather remnant</span>. <i>The best choices ever</i>.
+                    So I went to this little local shop where my grandma always go to buy the stuff she uses for adjusting clothes or making purses etc., 
+                    and I bought <span class="pink-text">200 rhinestones</span> (<i>on my defend, they were small</i>), <span class="pink-text">a dazzling fabric</span>, <span class="pink-text">a cute rose ribbon</span> and then 
+                    I bought in other places some <span class="pink-text">3D stickers, a leopard-print faux leather remnant</span>. <i>The best choices ever</i>.
                 </p>
             `,
             right: `
-                <p><span class="pink-text">PHASE 6: THE SKIN BUILDING</span><br>
-                    Creating the <i>'skin'</i> of my poor naked cyberbaby was so much
-                    <span class="pink-text">agonizing</span> that I think this was the worst part of the whole process.
-                    <span class="pink-text">I SPENT A DAY PUTTING STRASS BY STRASS AROUND THE MONITOR.</span>
-                    Only <i>God</i> knows how much I <span class="pink-text">suffered</span>.
+                <p><span class="phase-heading">PHASE 6: THE SKIN BUILDING</span><br>
+                    Creating the <i>"skin"</i> of my poor naked cyberbaby was so
+                    <span class="pink-text">agonizing </span> that I think this was the worst part of the whole process.
+                    <span class="pink-text">I SPENT A DAY PUTTING RHINESTONES BY RHINESTONES AROUND THE MONITOR</span>
+                    Only <i>God</i> knows how much I suffered.
                 </p>
                 <p>
                     Aslo, putting the <span class="pink-text">dazzled fabring</span> in the space for the keyboard
                     was extremily <span class="pink-text">irritating</span>, because I had to use the hot glue, as always,
-                    and this damn thing made <span class="pink-text">too much thickness</span> so the keyboard wouldn't
-                    fit! <i>OMG I don't know how I survived.</i>
+                    and this damn thing created a layer<span class="pink-text">too thick</span> so the keyboard wouldn't
+                    fit anymore! <i>OMG I don't know how I survived.</i>
                 </p>
                 <p>
-                    I had to press it down and read just it I don't know how much time. 
-                    I also find out that <span class="pink-text">the cover of the raspberry pi was too large</span>
-                    and had <span class="pink-text">to sand down it little by little</span> trying to put the keyboard
-                    and see if it fitted. My grandma helped me out with the <i>leopard fur</i> making the <span class="pink-text">hem</span>.
+                    I had to press it down and readjust it. I don't know how much time. I also found out 
+                    that <span class="pink-text">the cover of the Raspberry Pi was too large</span>
+                    and I had to sand down it little by little trying to put the keyboard and see if it fitted
                 </p>
                 <p>
-                    The problem was that after I cut the piece <span class="pink-text">I needed out</span> from the fabric 
-                    the sides of it <span class="pink-text">would fray</span>. I used it to <i>cover the cover</i> of the 
-                    raspberry pi, then I <span class="pink-text">hid the cables</span> passing from the top to the bottom
-                    (because thery were the usb cables conneting the monitor, speakers and webcam to the raspberry pi) 
+                    My grandma helped me out with the leopard fur making the <span class="pink-text">hem</span>.
+                    The problem was that after I cut the piece I needed out from the fabric 
+                    the sides of it would fray. I used it to <i>cover the cover</i> of the 
+                    Raspberry Pi, then I <span class="pink-text">hid the cables</span> passing from the top to the bottom
+                    (because there were the USB cables connecting the monitor, speakers and webcam to the Raspberry Pi) 
                     with the <span class="pink-text">pink ribbon</span>.
                 </p>
                 <p>
                     The most fun and refreshing part was adding the <span class="pink-text">stickers</span>. I felt amazing and like the whole process was worth it. 
                     <i>YEAH, ALRIGHT, I JUST MADE IT FOR THE STICKERS!</i> 
-                    Then I <span class="pink-text">print the raspberry pi logo</span> and added to the top mask in pvc oh yeah, 
-                    I also made a little ring fo the camera because the hole in whic I put it was a little BLEAH.
+                    Then I printed the <span class="pink-text">Raspberry Pi logo</span> and added to the top mask in pvc, oh yeah, 
+                    I also made a little ring for the camera because the hole in which I put it was a little BLEAH.
                 </p>
                 <p>
-                    One thing felt off, the <span class="pink-text">keyboard</span> was too much black and simple, 
-                    so I created some stickers with the print of a <span class="pink-text">kiss</span> to add on it. 
-                    The 3d stickers weren't right because they would make the keyboard impossible to put 
-                    anywhere in a stable way (<i>because it is closable</i>).
+                    One thing felt off, the <span class="pink-text">keyboard</span> w was too much black and simple, so I created some stickers with the print of a 
+                    <span class="pink-text">kiss</span> to add on it. The 3D stickers weren't right because 
+                    they would make the keyboard impossible to put anywhere in a stable way (<i>because it is closable</i>).
+                    So <span class="pink-text">I KISSED A PAPER FOR TWENTY TIMES</span> and chose the best kiss shapes, 
+                   then I used baking paper and scotch to make the stickers
                 </p>
                 <p>
-                    So <span class="pink-text">I KISSED A PAPER FOR TWENTY TIMES</span> and choose the best kiss, 
-                    then I used baking paper and scotch to make the stickers. If you watch <i>the tape</i> you'll find the how.
+                    At the end, I had it almost done, but I felt like the <span class="pink-text">top of my jewelry box</span> was too much "blank". 
+                    So I printed the iconic writing <span class="pink-text">"Angel"</span> from the name of one of the Bratz dolls and the collection of Rock Angelz of the Bratz, 
+                    I sprayed it <span class="pink-text">silver</span> and added with hot glue on the top of my case and then 
+                    I saw this cute idea on pinterest and take a <span class="pink-text">safety pin</span> 
+                    and put little trinkets with letters on it and composed <span class="pink-text">"Lucia"</span>
+                    (<i>yes I have to mark what's mine!!! Muahahahaha</i>) and pinned it also on the top. <span class="pink-text">PERFECT!</span> 
                 </p>
                 <p>
-                    At the end, I had it almost done, but I felt like the <span class="pink-text">top of my jewelry box</span> was too much 'blank'. 
-                    So I printed the iconic writing <span class="pink-text">'Angelz'</span> from the <i>collection of rock angelz of the bratz</i>, 
-                    and I sprayed it <span class="pink-text">silver</span> and added with hot glue on the top of my case 
-                    and then I saw this cute idea on pinterest and take a <span class="pink-text">safety pin</span> 
-                    and put little <span class="pink-text">trinkets</span> with letters on it and composed <span class="pink-text">'lucia'</span>
-                    (<i>yes i have to mark what's mine!!! muahahahaha</i>) and pinned it also on the top. <span class="pink-text">PERFECT!</span> 
-                    That's how my baby was born. It's name is Angelz.
+                  Then I added <span class="pink-text"> more 3D stickers</span>. PERFECT! That's how my baby was born :3
                 </p>
             `
         }
@@ -493,12 +491,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Se manca nome o paese, mostra il fumetto personalizzato
         if (!name || !country) {
-            if (bubbleTip) bubbleTip.style.display = 'flex';
+            if (bubbleTip) {
+                bubbleTip.style.display = 'flex';
+                if (!name) nameInput.focus();
+                else countryInput.focus();
+            }
             return;
         }
 
         // Se manca solo il messaggio (opzionale, gestiscilo se serve)
         if (!message) {
+            messageInput.focus();
             return;
         }
 
@@ -518,13 +521,24 @@ document.addEventListener('DOMContentLoaded', () => {
         if (bubbleTip) bubbleTip.style.display = 'none';
     });
 
-    // FA SPARIRE IL FUMETTO APPENA CLICCHI O SCRIVI NEGLI INPUT
-    [nameInput, countryInput, messageInput].forEach(input => {
-        input.addEventListener('focus', () => {
-            if (bubbleTip) bubbleTip.style.display = 'none';
-        });
+    // Mostra il fumetto se si cerca di scrivere il messaggio prima di nome e paese
+    messageInput.addEventListener('focus', () => {
+        if (!nameInput.value.trim() || !countryInput.value.trim()) {
+            if (bubbleTip) bubbleTip.style.display = 'flex';
+        }
+    });
+
+    // Nasconde il fumetto quando entrambi i campi sono compilati
+    [nameInput, countryInput].forEach(input => {
         input.addEventListener('input', () => {
-            if (bubbleTip) bubbleTip.style.display = 'none';
+            if (nameInput.value.trim() && countryInput.value.trim()) {
+                if (bubbleTip) bubbleTip.style.display = 'none';
+            }
+        });
+        input.addEventListener('focus', () => {
+            if (nameInput.value.trim() && countryInput.value.trim()) {
+                if (bubbleTip) bubbleTip.style.display = 'none';
+            }
         });
     });
 });
@@ -541,18 +555,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const month = date.getMonth();
 
         const monthNames = [
-            "Gennaio",
-            "Febbraio",
-            "Marzo",
-            "Aprile",
-            "Maggio",
-            "Giugno",
-            "Luglio",
-            "Agosto",
-            "Settembre",
-            "Ottobre",
-            "Novembre",
-            "Dicembre"
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
         ];
 
         // Giorno della settimana del primo giorno del mese
@@ -742,15 +756,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="box-header">ABOUT</div>
                     <div class="box-content center-text" style="padding-bottom:3px">
                         <p class="pink-text" style="text-align: left;margin-bottom:0px">Hello there!</p>
-                        <img style="width: 278px;height: 147px" src="gif/hello_there.gif" class="gif" alt="obi one">
-                        <div style="display:flex;margin-bottom:0px"><p style="margin-bottom:0px">This section is dedicated to me!!!</p><img src="img/slay.png" style="width: 40px;height: 40px; top:-5px; position:relative;"></div>
-                        <p style="margin-bottom:2px">I'm a little<span class="pink-text">gremlin</span> from 2004 who loves too much things.
+                        <img style="width: 278px; height: 137px; margin: 2px auto 8px auto; display: block;" src="gif/hello_there.gif" class="gif" alt="obi one">
+                        <div style="display:flex;margin-bottom:0px"><p style="margin-bottom:0px">This section is dedicated to me!!!</p><img src="img/slay.png" style="width: 40px;height: 34px; top:-5px; position:relative;"></div>
+                        <p style="margin-bottom:2px">I'm a little <span class="pink-text">gremlin</span> from 2004 who loves too much things.
                          Recently I passed from studying tarots, to crocheting, to trying building very cool things 
                          like the totally spies compowder, because duh! Who doesn't want to do it?! So, the whole cyberdeck project, 
                          as well as this website, are the product of my current <span class="pink-text">hyperfixation</span>!</p>
                         <div style="display: flex; flex-direction: row;">
                             <div style="padding-right: 10px;">
-                                <p>I love cats and I'm Daenerys Targaryen twin, 
+                                <p style="padding-top:8px">I love cats and I'm Daenerys Targaryen twin, 
                                 the only difference is that my dragons throw 
                                 up balls of fur instead of breathing fire.
                                 </p>
@@ -759,11 +773,11 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <p style="text-align: right; font-style:italic; margin-bottom: 0px;">miaomiaomiaomiaomiaomiaomiaomiaomiaomiao</p>
                                 </div>
                             </div>
-                            <img style="width: 140px;height: 145px; margin-top: 0px;" src="img/daeni.png" class="gif" alt="Daeneris">
+                            <img style="width: 140px;height: 135px; margin-top: 0px;" src="img/daeni.png" class="gif" alt="Daeneris">
                         </div>
                         <p>
-                            I love the <span class="pink-text">old internet</span>, I’ve grown up playing
-                            on site like girl.go.games, watching series on yt and researching on wikipedia. This is my tribute to it!</p>
+                            I love the <span class="pink-text">old internet</span>, I've grown up playing
+                            on site like girl.go.games, watching series on yt and researching on wikipedia. This is my <span class="pink-text">tribute</span> to it!</p>
                     </div>`;
             }
         });
@@ -782,28 +796,25 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div style="display: flex; flex-direction: row;">
                             <div style="padding-right: 10px;">
                                 <p>Do you know <span class="pink-text">the muffin man? </span></p>
-                                <p>If you don’t...well, I don’t know.</p> 
+                                <p>If you don't...well, I don't know.</p> 
                                 <p>Anyway, check out Ube Boobey,(<a
-                                href="https://www.youtube.com/@UbeBoobey" class="pink-text">click here</a>), she’s my muse.</p>
+                                href="https://www.youtube.com/@UbeBoobey" class="pink-text">click here</a>), she's my muse.</p>
                             </div> 
                              <img style="width: 260px;height: 153px; margin-top: 0px;" src="img/farquaad.jfif" class="gif" alt="Lord Farquad">
                         </div>
                         <p style="margin-bottom: 13px;">The idea behind this site starts with <span class="pink-text">checking facts</span>.
-                        We live in Varoufakis’s technofeudalism,a system where we are the <span class="pink-text">serfs of Big Techs</span> that drain our time and emotions. 
+                        We live in Varoufakis's technofeudalism,a system where we are the <span class="pink-text">serfs of Big Techs</span> that drain our time and emotions. 
                         The fix? <span class="pink-text">Use the tech to hack the tech.</span></p>
-                       <div class="katniss-text">   
-                            <p style="margin-bottom:0px;">
-                                Quincho and Walsh (they’re very cool, google them!) explain that online
-                                we are forced to be a <span class="pink-text">‘Girl’</span>.
+                        <p> Quincho and Walsh (they're very cool, google them!) explain that online
+                                we are forced to be a <span class="pink-text">'Girl'</span>.
                                 Naive and mischievous, without responsibilities. But we can use this
-                                stereotype as a
-                            </p>
-                            <img src="gif/katniss.gif" alt="Katniss">
-                            <p>
-                                <span class="pink-text">Trojan horse</span> to sabotage the system.
-                                It’s not about gender, it’s a critical posture.
+                                stereotype as a <span class="pink-text">Trojan horse</span> to sabotage the system.</p>
+                       <div style="overflow: hidden;">
+                            <img src="gif/katniss.gif" alt="Katniss" style="float: right; width: 260px; margin: 0 0 10px 15px; border-radius: 12px;">
+                            <p style="margin-bottom:0px;">
+                                It's not about gender, it's a critical posture.
                                 We can be the Katniss Everdeen of the web and set fire to the platform
-                                morass through self-design.
+                                morass through <br>self-design.
                             </p>
                         </div>
                         <p>BE A GIRL. HACK THE STACK.<span class='pink-text'> BRING BACK THE OLD INTERNET.</span></p>
@@ -838,28 +849,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 <!-- Box superiore con la descrizione -->
                 <div class="box" style="width: 703px; margin-bottom: 25px;">
                     <div class="box-header">TAPE</div>
-                    <div class="box-content" style="display: flex; gap: 20px; align-items: flex-start; padding: 20px;">
+                    <div class="box-content" style="display: flex; gap: 20px; align-items: flex-start; padding: 20px;padding-bottom:2px">
                         <div style="flex: 1; font-size: 22px; line-height: 24px;">
-                            <p style="margin: 0px;">The following video shows the whole <span class="pink-text">process</span> of building the bratz cyberdeck, it contains my breakdowns, my cries, my blood, my soul, my everything!</p>
-                            <div style="display: inline-flex;"><p style="margin: 0px;">I spent <span class="pink-text">three months</span> giving birth to my baby.<p> <img src="img/gatito.png" alt="Video Preview" style="width: 42px"></div>
+                            <p style="margin: 0px;">The following video shows the whole <span class="pink-text">process</span> of building the Bratz cyberdeck, it contains my breakdowns, my cries, my blood, my soul, my everything!</p>
+                            <div style="display: inline-flex; align-items: center; gap: 8px;"><p style="margin: 0px; margin-top:15px">I spent <span class="pink-text">three months</span> giving birth to my baby-.</p> <img src="img/gatito.png" alt="Video Preview" style="width: 42px"></div>
                              <p style="margin: 0px;">So please be gentle and enjoy the show :3</p>
-                            <p>You can find it also on yt (<a class="pink-text" href="https://www.youtube.com/watch?v=aumh4oknVuM&t=106s" target="_blank">click here</a>).</p>
+                            <p style="margin-top:15px">You can find it also on yt (<a class="pink-text" href="https://www.youtube.com/watch?v=aumh4oknVuM&t=106s" target="_blank">click here</a>).</p>
                         </div>
                         <div style="flex-shrink: 0; text-align: center;">
                             <img src="img/elgatororar.png" alt="Video Preview" style="width: 188px; border-radius: 8px;">
                         </div>
                     </div>
+                    <p style="padding:20px;padding-top:2px"> N.b. I recorded it on the phone so it's a <i>little bit low quality</i> and I speak in <span class="pink-text">italian</span>, because my english is horrible, BUT you can activate the <span class="pink-text">automatic translation</span> in english (it's almost all right).</p>
+
                 </div>
 
                 <!-- Finestra inferiore che usa img/tape.png come sfondo -->
-                <div style="width: 900px; height: 555px; background: url('img/tape.png') no-repeat center center; background-size: 100% 100%; border: none; position: relative;">
-                    <div style="position: absolute; top: 92px; left: 112px; width: 648px; height: 355px; overflow-y: auto; padding: 15px;">
-                        <p class="pink-text" style="font-size: 24px; margin-top: 0;">Video Player Area</p>
-                        <p>Il video della build andrà inserito qui dentro!</p>
-                    </div>
+                <div style="width: 1176px; height: 668px; background: url('img/tape.png') no-repeat center center; background-size: 100% 100%; border: none; position: relative;">
+
                 </div>`;
 
             container.insertBefore(tapeWrapper, footerElement);
+
+            const tapeBackBtn = document.getElementById('tape-back-btn');
+            if (tapeBackBtn) {
+                tapeBackBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showStandardLayout();
+                    if (colMiddle) colMiddle.innerHTML = initialHomeContent;
+                });
+            }
         });
     }
 })();// --- Music Player Logic ---

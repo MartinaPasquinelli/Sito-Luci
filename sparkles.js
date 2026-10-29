@@ -17,6 +17,10 @@
         const el = document.createElement('span');
         el.className = 'sparkle';
         el.textContent = SPARKLE_CHARS[Math.floor(Math.random() * SPARKLE_CHARS.length)];
+        el.style.position = 'fixed';
+        el.style.pointerEvents = 'none';
+        el.style.userSelect = 'none';
+        el.style.zIndex = '9999';
         el.style.color = COLORS[Math.floor(Math.random() * COLORS.length)];
         el.style.fontSize = (8 + Math.random() * 16) + 'px';
         el.style.left = x + 'px';
