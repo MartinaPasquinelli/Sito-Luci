@@ -745,6 +745,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  const logoImg = document.querySelector(".logo-img");
+  if (logoImg) {
+    logoImg.addEventListener("click", () => {
+      showStandardLayout();
+      if (colMiddle) colMiddle.innerHTML = initialHomeContent;
+    });
+  }
+
   // HOME CLICK
   if (navHome) {
     navHome.addEventListener("click", (e) => {
