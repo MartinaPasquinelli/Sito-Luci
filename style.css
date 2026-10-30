@@ -56,11 +56,9 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(
-    circle,
-    transparent 20%,
-    rgba(255, 105, 180, 0.2) 100%
-  );
+  background: radial-gradient(circle,
+      transparent 20%,
+      rgba(255, 105, 180, 0.2) 100%);
   pointer-events: none;
   z-index: -1;
 }
@@ -100,6 +98,7 @@ header {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0);
@@ -1132,10 +1131,10 @@ header {
 
 .canvas-area {
   position: absolute;
-  top: 89px;
-  left: 116px;
-  width: 646px;
-  height: 356px;
+  top: 97px;
+  left: 107px;
+  width: 659px;
+  height: 352px;
   background: transparent;
   border: none;
   padding: 0;
