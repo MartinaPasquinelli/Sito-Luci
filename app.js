@@ -102,7 +102,7 @@ const diaryData = {
                 </p>
             `,
       right: `
-                <p><span class="phase-heading">PHASE 4: THE STRUCTURAL BUILDING</span><br>
+                <p><span class="phase-heading">PHASE 4: THE STRUCTURE</span><br>
                     Building the effective structure of the cyberdeck was another funny part, but not funny "ahah", funny  <i>"OMG, I'm dying"</i>. 
                     I bought <span class="pink-text">black sheet of pvc</span> to build the support of the components. 
                     I divided the case in<span class="pink-text"> two parts: the top one</span> with the <span class="pink-text">monitor</span> the webcam and the mic/speakers, and <span class="pink-text">the bottom one</span> with the keyboard and the<span class="pink-text"> Raspberry pi</span>. 
@@ -157,7 +157,7 @@ const diaryData = {
                 </p>
             `,
       right: `
-                <p><span class="phase-heading">PHASE 6: THE SKIN BUILDING</span><br>
+                <p><span class="phase-heading">PHASE 6: THE SKIN</span><br>
                     Creating the <i>"skin"</i> of my poor naked cyberbaby was so
                     <span class="pink-text">agonizing </span> that I think this was the worst part of the whole process.
                     <span class="pink-text">I SPENT A DAY PUTTING RHINESTONES BY RHINESTONES AROUND THE MONITOR</span>
@@ -222,8 +222,8 @@ const diaryData = {
                     <img src="img/b1.png" class="pics">
                     <img src="img/c4.png" class="pics">
                     <img src="img/c3.png" class="pics">
-                <div>
-                <img src="img/stelle.png"style="position: absolute;width: 68px;top: 105px;left: 3px;transform: rotate(180deg);" class="pics">
+                </div>
+                <img src="img/stelle.png"style="position: absolute;width: 68px;top: 105px;left: 3px;transform: rotate(180deg);">
                 <img src="img/stelle.png"style="position: absolute; width: 60px;top: 448px;left: 288px;" >
             </div>
             `,
@@ -565,6 +565,116 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+// --- Pics Lightbox Logic ---
+(function () {
+  const lightbox = document.getElementById("pics-lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxCounter = document.getElementById("lightbox-counter");
+  const lightboxCloseBtn = document.getElementById("lightbox-close");
+  const lightboxPrevBtn = document.getElementById("lightbox-prev");
+  const lightboxNextBtn = document.getElementById("lightbox-next");
+
+  let picsGalleryList = [];
+  let currentPicIndex = 0;
+
+  function refreshPicsGalleryList() {
+    const notebookEl = document.querySelector(".notebook");
+    if (!notebookEl) return;
+    const imgs = Array.from(notebookEl.querySelectorAll("img.pics"));
+    picsGalleryList = imgs.map((img) => img.getAttribute("src"));
+  }
+
+  function updateLightboxDisplay() {
+    if (!lightboxImg || picsGalleryList.length === 0) return;
+    const src = picsGalleryList[currentPicIndex];
+    lightboxImg.src = src;
+    if (lightboxCounter) {
+      lightboxCounter.innerText = `(${currentPicIndex + 1}/${picsGalleryList.length})`;
+    }
+  }
+
+  function openLightbox(clickedSrc) {
+    if (!lightbox || !lightboxImg) return;
+    refreshPicsGalleryList();
+    if (picsGalleryList.length === 0) {
+      picsGalleryList = [clickedSrc];
+      currentPicIndex = 0;
+    } else {
+      currentPicIndex = picsGalleryList.indexOf(clickedSrc);
+      if (currentPicIndex === -1) {
+        picsGalleryList.push(clickedSrc);
+        currentPicIndex = picsGalleryList.length - 1;
+      }
+    }
+    updateLightboxDisplay();
+    lightbox.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.style.display = "none";
+    document.body.style.overflow = "";
+    if (lightboxImg) lightboxImg.src = "";
+  }
+
+  function stepPic(delta) {
+    if (picsGalleryList.length === 0) return;
+    currentPicIndex =
+      (currentPicIndex + delta + picsGalleryList.length) % picsGalleryList.length;
+    updateLightboxDisplay();
+  }
+
+  // Delega click sulle immagini con classe .pics
+  document.addEventListener("click", (e) => {
+    const target = e.target;
+    if (target && target.tagName === "IMG" && target.classList.contains("pics")) {
+      e.preventDefault();
+      openLightbox(target.getAttribute("src"));
+    }
+  });
+
+  if (lightboxCloseBtn) {
+    lightboxCloseBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      closeLightbox();
+    });
+  }
+
+  if (lightbox) {
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+  }
+
+  if (lightboxPrevBtn) {
+    lightboxPrevBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      stepPic(-1);
+    });
+  }
+
+  if (lightboxNextBtn) {
+    lightboxNextBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      stepPic(1);
+    });
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (!lightbox || lightbox.style.display === "none") return;
+    if (e.key === "Escape") {
+      closeLightbox();
+    } else if (e.key === "ArrowLeft") {
+      stepPic(-1);
+    } else if (e.key === "ArrowRight") {
+      stepPic(1);
+    }
+  });
+})();
+
 // --- Calendar Logic ---
 (function () {
   const calendarContainer = document.getElementById("calendar-container");
@@ -795,7 +905,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                         <p>
                             I love the <span class="pink-text">old internet</span>, I've grown up playing
-                            on site like girl.go.games, watching series on yt and researching on wikipedia. This is my <span class="pink-text">tribute</span> to it!</p>
+                            on site like girl go games, watching series on yt and researching on wikipedia. This is my <span class="pink-text">tribute</span> to it!</p>
                     </div>`;
       }
     });
@@ -809,19 +919,19 @@ document.addEventListener("DOMContentLoaded", () => {
       showStandardLayout();
       if (colMiddle) {
         colMiddle.innerHTML = `
-                    <div class="box-header">BLUEPRINT</div>
+                    <div class="box-header">BACKGROUND</div>
                     <div class="box-content center-text">
                         <div style="display: flex; flex-direction: row;">
                             <div style="padding-right: 10px;">
                                 <p>Do you know <span class="pink-text">the muffin man? </span></p>
                                 <p>If you don't...well, I don't know.</p> 
-                                <p>Anyway, check out Ube Boobey,(<a
+                                <p>Anyway, check out Ube Boobey, (<a
                                 href="https://www.youtube.com/@UbeBoobey" class="pink-text">click here</a>), she's my muse.</p>
                             </div> 
-                             <img style="width: 260px;height: 153px; margin-top: 0px;" src="img/farquaad.jfif" class="gif" alt="Lord Farquad">
+                             <img style="width: 258px;height: 153px; margin-top: 0px;" src="img/farquaad.jfif" class="gif" alt="Lord Farquad">
                         </div>
-                        <p style="margin-bottom: 13px;">The idea behind this site starts with <span class="pink-text">checking facts</span>.
-                        We live in Varoufakis's technofeudalism,a system where we are the <span class="pink-text">serfs of Big Techs</span> that drain our time and emotions. 
+                        <p style="margin-bottom: 13px; margin-top:8px">The idea behind this site starts with <span class="pink-text">checking facts</span>.
+                        We live in Varoufakis's technofeudalism, a system where we are the <span class="pink-text">serfs of Big Techs</span> that drain our time and emotions. 
                         The fix? <span class="pink-text">Use the tech to hack the tech.</span></p>
                         <p> Quincho and Walsh (they're very cool, google them!) explain that online
                                 we are forced to be a <span class="pink-text">'Girl'</span>.
@@ -912,9 +1022,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const audio = document.getElementById("bg-music");
   const cdDisc = document.getElementById("cd-disc");
   const playText = document.getElementById("play");
+  const cdContainer = document.querySelector(".cd-container");
 
   if (playBtn && audio && cdDisc) {
-    playBtn.addEventListener("click", () => {
+    function toggleMusic() {
       if (audio.paused) {
         audio.play();
         cdDisc.classList.add("playing");
@@ -924,6 +1035,11 @@ document.addEventListener("DOMContentLoaded", () => {
         cdDisc.classList.remove("playing");
         playText.innerText = "start";
       }
-    });
+    }
+
+    playBtn.addEventListener("click", toggleMusic);
+    if (cdContainer) {
+      cdContainer.addEventListener("click", toggleMusic);
+    }
   }
 })();

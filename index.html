@@ -24,7 +24,7 @@
                 <ul>
                     <li><a href="#" id="nav-home">HOME</a></li>
                     <li><a href="#" id="nav-about">ABOUT</a></li>
-                    <li><a href="#" id="nav-blueprint">BLUEPRINT</a></li>
+                    <li><a href="#" id="nav-blueprint">BACKGROUND</a></li>
                     <li><a href="#" id="nav-tape">TAPE</a></li>
                 </ul>
                 <div class="cat-right">
@@ -124,7 +124,7 @@
                             <img src="gif/pawpaw.gif" class="paw-icon" alt="Zampina">
                         </div>
                         <p style="text-align:center;">Just a girl from Rimini <span class="pink-text">hacking the
-                                system.</span><br>This indie site houses my bachelor's <br>project, a bratz cyberdeck (a
+                                system.</span><br>This indie website houses my bachelor's <br>project, a bratz cyberdeck (a
                             self-made pc from scifi/cyberpunk culture) built to keep the old DIY STEM spirit
                             alive.
                         </p>
@@ -192,8 +192,8 @@
                 <div class="notebook">
                     <!-- Pagina sinistra -->
                     <div class="page left-page" id="page-left">
-                        <div class="scroll-btn-row">
-                            <button class="scroll-down-btn" id="scroll-left-btn">scroll down</button>
+                        <div class="scroll-btn-row" style="height: 27px;">
+                            <button class="scroll-down-btn" id="scroll-left-btn" style="display: none;">scroll down</button>
                         </div>
                         <div class="page-scroll-area" id="diary-left-scroll">
                             <div class="page-content" id="diary-left-content"></div>
@@ -207,8 +207,8 @@
 
                     <!-- Pagina destra -->
                     <div class=" page right-page" id="page-right">
-                        <div class="scroll-btn-row">
-                            <button class="scroll-down-btn" id="scroll-right-btn">scroll down</button>
+                        <div class="scroll-btn-row" style="height: 27px;">
+                            <button class="scroll-down-btn" id="scroll-right-btn" style="display: none;">scroll down</button>
                         </div>
                         <div class="page-scroll-area" id="diary-right-scroll">
                             <div class="page-content" id="diary-right-content"></div>
@@ -301,6 +301,26 @@
     <footer style="text-align: center;">
         <p style="color: white;text-align: center;">@lucia_forse_png</p>
     </footer>
+    <!-- LIGHTBOX MODAL FOR PICS -->
+    <div id="pics-lightbox" class="lightbox-overlay" style="display: none;">
+        <div class="lightbox-window">
+            <div class="lightbox-header">
+                <div class="lightbox-title">
+                    <span>PICS :3</span>
+                    <span class="lightbox-counter" id="lightbox-counter"></span>
+                </div>
+                <button type="button" class="lightbox-close-btn" id="lightbox-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="lightbox-body">
+                <button type="button" class="lightbox-nav-btn lightbox-prev" id="lightbox-prev" aria-label="Previous image">&lt;</button>
+                <div class="lightbox-img-wrapper">
+                    <img id="lightbox-img" src="" alt="Enlarged photo">
+                </div>
+                <button type="button" class="lightbox-nav-btn lightbox-next" id="lightbox-next" aria-label="Next image">&gt;</button>
+            </div>
+        </div>
+    </div>
+
     <script src="app.js"></script>
     <script src="sparkles.js"></script>
 </body>

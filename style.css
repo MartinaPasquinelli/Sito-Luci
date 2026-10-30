@@ -56,9 +56,11 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle,
-      transparent 20%,
-      rgba(255, 105, 180, 0.2) 100%);
+  background: radial-gradient(
+    circle,
+    transparent 20%,
+    rgba(255, 105, 180, 0.2) 100%
+  );
   pointer-events: none;
   z-index: -1;
 }
@@ -99,7 +101,6 @@ header {
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0);
@@ -440,6 +441,7 @@ header {
   display: flex;
   align-items: center;
   margin-left: 6px;
+  cursor: url("img/pointer_hand.png"), pointer;
 }
 
 .cd-cover {
@@ -498,6 +500,7 @@ header {
 }
 
 .pics {
+  cursor: url("img/pointer_hand.png"), pointer;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -995,7 +998,7 @@ header {
   border: none;
   color: #9f9f9f;
   font-family: var(--font-main);
-  font-size: 1.17rem;
+  font-size: 1.29rem;
   transition: color 0.2s;
   padding: 0;
   opacity: 0.9;
@@ -1359,4 +1362,177 @@ header {
   box-shadow: inset 1px 1px 0 #fff;
 
   border-radius: 0;
+}
+
+
+/* =========================================
+   LIGHTBOX MODAL FOR PICS
+========================================= */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 5, 18, 0.78);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: lightboxFadeIn 0.2s ease-out;
+}
+
+@keyframes lightboxFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.lightbox-window {
+  background: var(--box-bg);
+  border: 2px solid var(--box-border);
+  border-radius: 17px;
+  overflow: hidden;
+  box-shadow:
+    6px 0px 6px 0px #ffcae4 inset,
+    -6px -6px 6px 0px #ffcae4 inset,
+    0 12px 35px rgba(0, 0, 0, 0.45);
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  animation: lightboxPopIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.2);
+}
+
+@keyframes lightboxPopIn {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.lightbox-header {
+  background: #ffcae4;
+  color: #000000;
+  font-family: var(--font-main);
+  font-size: 26px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border-bottom: 2px solid #d62584;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 14px;
+  box-shadow:
+    inset -2px -2px 4px #d62584,
+    inset 2px 2px 4px #ffffff;
+}
+
+.lightbox-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: 1px;
+}
+
+.lightbox-counter {
+  font-size: 20px;
+  color: var(--hot-pink);
+  font-weight: bold;
+}
+
+.lightbox-close-btn {
+  background: #ffffff;
+  border: 2px solid var(--hot-pink);
+  border-radius: 8px;
+  width: 28px;
+  height: 28px;
+  font-family: var(--font-main);
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url("img/pointer_hand.png"), pointer;
+  box-shadow:
+    inset -2px -2px 2px #ffcae4,
+    inset 2px 2px 2px #ffcae4;
+  transition: transform 0.15s ease, background 0.15s ease;
+  padding: 0;
+}
+
+.lightbox-close-btn:hover {
+  background: #ffe4e1;
+  transform: scale(1.1);
+}
+
+.lightbox-body {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: #ffffff;
+  min-height: 200px;
+  box-sizing: border-box;
+}
+
+.lightbox-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80vw;
+  max-height: 72vh;
+}
+
+#lightbox-img {
+  max-width: min(80vw, 900px);
+  max-height: 72vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border: 2px solid #ffcae4;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(214, 37, 132, 0.2);
+}
+
+.lightbox-nav-btn {
+  background: #ffffff;
+  border: 2px solid var(--hot-pink);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main);
+  font-size: 26px;
+  color: #000;
+  cursor: url("img/pointer_hand.png"), pointer;
+  box-shadow:
+    inset -2px -2px 3px #ffcae4,
+    inset 2px 2px 3px #ffcae4;
+  transition: transform 0.2s ease, background 0.2s ease;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.lightbox-nav-btn:hover {
+  transform: scale(1.12);
+  background: #ffe4e1;
 }
