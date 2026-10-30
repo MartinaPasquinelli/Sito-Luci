@@ -1,15 +1,15 @@
 // Contenuti fittizi per i tab del diario
 const diaryData = {
-    diary: [
-        {
-            left: `
+  diary: [
+    {
+      left: `
                 <p><span class="phase-heading">PHASE 1: THE IDEA</span><br>
                     One day I was scrolling on Titktok and I found this <span class="pink-text">reel about creating a 
                     pc inside a purse</span> with the shape of a shell and the aesthetic of a mermaid.
                     I was stunned! So I decided I wanted to create one of self.
                     <i>MAN, it look so easy when it's in reel form at speed x2. </i>
                 </p>
-                <P>Anyway, I <i>stalked</i>the profile of the content creator (Ube Boobey) 
+                <P>Anyway, I stalked the profile of the content creator (Ube Boobey) 
                     and I found the whole video on yt (<a class="pink-text" href="https://www.youtube.com/watch?v=aumh4oknVuM&t=106s">check here!</a>). It's really well made 
                     and in the description there are all the links to the hardware components she used. I found it really fascinating because
                     the girl had <span class="pink-text">0 previous experience</span> and yet she managed to assemble the pc giving it the vibes she wanted!
@@ -26,11 +26,11 @@ const diaryData = {
                 </p>
                 <p>
                     The goal was to find a <span class="pink-text"> monitor</span> and a Raspberry pi 5 (the basic component for a diy pc),
-                    then I added<span class="pink-text">a bluetooth  keyboard, a mic, some speakers and a webcam</span>.
+                    then I added <span class="pink-text">a bluetooth  keyboard, a mic, some speakers and a webcam</span>.
                     As I said, I wanted my pc to be performative as a normal one (<i>or mostly like it</i>).
                 </p>
             `,
-            right: `
+      right: `
                 <p><span class="phase-heading">PHASE 2: THE ASSEMBLING</span><br>
                     I found everything I needed and ordered it. 
                     I was so nervous to take the pieces out of their packaging because in my mind <span class="pink-text">electronics are so vulnerable 
@@ -74,10 +74,10 @@ const diaryData = {
                     I used it to install the software of my cyberdeck. 
                     It was easy to format, anyway you can see how on the tape page, or at this <a class="pink-text" href="https://www.youtube.com/watch?v=ckT-tLpBnXc&t=124s">link here</a>!
                 </p>
-            `
-        },
-        {
-            left: `
+            `,
+    },
+    {
+      left: `
                 <p><span class="phase-heading">PHASE 3: THE CASE</span><br>
                    Now I had to decide where to put the whole thing and build the bones structure of my cyberdeck.
                     I saw this really really cute pic of a <span class="pink-text">transparent purse</span>
@@ -101,7 +101,7 @@ const diaryData = {
                     I wanted the case that way because it was more "elegant" (shut up lucia!).
                 </p>
             `,
-            right: `
+      right: `
                 <p><span class="phase-heading">PHASE 4: THE STRUCTURAL BUILDING</span><br>
                     Building the effective structure of the cyberdeck was another funny part, but not funny "ahah", funny  <i>"OMG, I'm dying"</i>. 
                     I bought <span class="pink-text">black sheet of pvc</span> to build the support of the components. 
@@ -131,10 +131,10 @@ const diaryData = {
                     I used the <span class="pink-text">hot glue</span> <i>EVERYWHERE</i>. BUT I'M THE MOTHER OF THE DRAGONS (my cat), THE UNBURNED(who got all her fingers burnt at the end of the project), QUEEN OF THE SEVEN KINGDOMS- ok I cut it. 
                     The cables were too long so I had to tie them up.
                 </p>
-            `
-        },
-        {
-            left: `
+            `,
+    },
+    {
+      left: `
                 <p><span class="phase-heading">PHASE 5: THE BRATZ CHOICE</span><br>
                     I had the hardest time choosing the <span class="pink-text">aesthetic</span> to give to my cyberdeck, because
                      I have <i>too many damn interests!</i> So I didn't know what core to pick. 
@@ -156,7 +156,7 @@ const diaryData = {
                     I bought in other places some <span class="pink-text">3D stickers, a leopard-print faux leather remnant</span>. <i>The best choices ever</i>.
                 </p>
             `,
-            right: `
+      right: `
                 <p><span class="phase-heading">PHASE 6: THE SKIN BUILDING</span><br>
                     Creating the <i>"skin"</i> of my poor naked cyberbaby was so
                     <span class="pink-text">agonizing </span> that I think this was the worst part of the whole process.
@@ -206,12 +206,12 @@ const diaryData = {
                 <p>
                   Then I added <span class="pink-text"> more 3D stickers</span>. PERFECT! That's how my baby was born :3
                 </p>
-            `
-        }
-    ],
-    pics: [
-        {
-            left: `
+            `,
+    },
+  ],
+  pics: [
+    {
+      left: `
             <div class="two-columns-layout">
                 <div class="my-col-left" style="margin-top:5px">   
                     <img src="img/c1.png" class="pics">
@@ -227,7 +227,7 @@ const diaryData = {
                 <img src="img/stelle.png"style="position: absolute; width: 60px;top: 448px;left: 288px;" >
             </div>
             `,
-            right: `
+      right: `
               <div class="two-columns-layout">
                 <div class="my-col-left" style="margin-top:5px">
                     <img src="img/c5.png" class="pics">
@@ -242,12 +242,12 @@ const diaryData = {
                 <img src="img/bacini.png"style="position: absolute;width: 135px;top: 152px;left: 3px;">
                 <img src="img/bacio.png"style="position: absolute;width: 73px;top: 449px;left: 167px;">
             </div>
-            `
-        }
-    ],
-    links: [
-        {
-            left: `
+            `,
+    },
+  ],
+  links: [
+    {
+      left: `
                 <div class="two-columns-layout">
                 <img src="img/t3.png"style="position: absolute;width: 281px;top: 18px;left: 3px;">
                 <img src="img/t7.png"style="position: absolute;width: 133px;top: 119px;left: 204px;">
@@ -259,7 +259,7 @@ const diaryData = {
                 
                 </div>
             `,
-            right: `
+      right: `
                 <div class="two-columns-layout">
                 <img src="img/t4.png"style="position: absolute;width: 80px;top: 18px;left: 3px;">
                 <img src="img/t5.png"style="position: absolute;width: 227px;top: 57px;left: 151px;">
@@ -270,315 +270,338 @@ const diaryData = {
                 <p class="button-link" style="top: 217px; left: 62px;"><a href="https://www.amazon.it/dp/B094D75SBS?ref=cm_sw_r_cso_wa_apan_dp_GVMJJYEJ70TV6EZ2RTN1&ref_=cm_sw_r_cso_wa_apan_dp_GVMJJYEJ70TV6EZ2RTN1&social_share=cm_sw_r_cso_wa_apan_dp_GVMJJYEJ70TV6EZ2RTN1" class="pink-text" target="_blank">click to buy!</a></p>
                 <p class="button-link" style="top: 452px; left: 230px;"><a href="https://www.amazon.it/dp/B0DK1NBTT7?ref=cm_sw_r_cso_wa_apan_dp_LIGHTSABERTKQKCPWNYW&ref_=cm_sw_r_cso_wa_apan_dp_LIGHTSABERTKQKCPWNYW&social_share=cm_sw_r_cso_wa_apan_dp_LIGHTSABERTKQKCPWNYW&th=1" class="pink-text" target="_blank">click to buy!</a></p>
                 </div>
-            `
-        }
-    ]
+            `,
+    },
+  ],
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-    // 1. Gestione Tabs del Diario
-    const markers = document.querySelectorAll('.marker');
-    const leftContent = document.getElementById('diary-left-content');
-    const rightContent = document.getElementById('diary-right-content');
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Gestione Tabs del Diario
+  const markers = document.querySelectorAll(".marker");
+  const leftContent = document.getElementById("diary-left-content");
+  const rightContent = document.getElementById("diary-right-content");
 
-    // Contenitori di scroll delle pagine e righe dei bottoni
-    const leftScrollArea = document.getElementById('diary-left-scroll');
-    const rightScrollArea = document.getElementById('diary-right-scroll');
+  // Contenitori di scroll delle pagine e righe dei bottoni
+  const leftScrollArea = document.getElementById("diary-left-scroll");
+  const rightScrollArea = document.getElementById("diary-right-scroll");
 
-    // Seleziona le intere righe dei bottoni "scroll down" in alto
-    const scrollBtnRows = document.querySelectorAll('.scroll-btn-row');
-    const postit = document.getElementById("diary-postit")
-    const pageNavBottom = document.getElementById("page-nav-bottom")
-    // Bottoni "scroll down" singoli (se ti servono per gli eventi)
-    const scrollLeftBtn = document.getElementById('scroll-left-btn');
-    const scrollRightBtn = document.getElementById('scroll-right-btn');
+  // Seleziona le intere righe dei bottoni "scroll down" in alto
+  const scrollBtnRows = document.querySelectorAll(".scroll-btn-row");
+  const postit = document.getElementById("diary-postit");
+  const pageNavBottom = document.getElementById("page-nav-bottom");
+  // Bottoni "scroll down" singoli (se ti servono per gli eventi)
+  const scrollLeftBtn = document.getElementById("scroll-left-btn");
+  const scrollRightBtn = document.getElementById("scroll-right-btn");
 
-    let currentTabId = 'diary';
-    let currentPageIndex = 0;
+  let currentTabId = "diary";
+  let currentPageIndex = 0;
 
-    // Funzione per aggiornare il contenuto
-    function updateDiary() {
-        const pages = diaryData[currentTabId];
-        if (pages && pages[currentPageIndex]) {
-            leftContent.innerHTML = pages[currentPageIndex].left;
-            rightContent.innerHTML = pages[currentPageIndex].right;
+  // Funzione per aggiornare il contenuto
+  function updateDiary() {
+    const pages = diaryData[currentTabId];
+    if (pages && pages[currentPageIndex]) {
+      leftContent.innerHTML = pages[currentPageIndex].left;
+      rightContent.innerHTML = pages[currentPageIndex].right;
 
-            // Aggiorna classe active dei marker
-            markers.forEach(m => {
-                if (m.getAttribute('data-tab') === currentTabId) {
-                    m.classList.add('active');
-                } else {
-                    m.classList.remove('active');
-                }
-            });
-
-            // Gestisci la visibilità dei bottoni di scorrimento pagina (frecce in basso)
-            const prevBtn = document.querySelector('.prev-page-btn');
-            const nextBtn = document.querySelector('.next-page-btn');
-            if (prevBtn) {
-                prevBtn.style.visibility = currentPageIndex > 0 ? 'visible' : 'hidden';
-            }
-            if (nextBtn) {
-                nextBtn.style.visibility = currentPageIndex < pages.length - 1 ? 'visible' : 'hidden';
-            }
-
-            // Mostra l'intera riga `.scroll-btn-row` e abilita lo scroll SOLO nella scheda 'diary'.
-            // Per 'diary' e 'tips' nascondi completamente la riga e disattiva lo scroll.
-            if (currentTabId === 'diary') {
-                scrollBtnRows.forEach(row => row.style.display = 'flex');
-                postit.style.display = 'flex';
-                pageNavBottom.style.display = 'flex';
-                if (leftScrollArea) leftScrollArea.classList.remove('no-scroll');
-                if (rightScrollArea) rightScrollArea.classList.remove('no-scroll');
-            } else {
-                postit.style.display = 'none';
-                scrollBtnRows.forEach(row => row.style.display = 'none');
-                pageNavBottom.style.display = 'none';
-                if (leftScrollArea) leftScrollArea.classList.add('no-scroll');
-                if (rightScrollArea) rightScrollArea.classList.add('no-scroll');
-            }
+      // Aggiorna classe active dei marker
+      markers.forEach((m) => {
+        if (m.getAttribute("data-tab") === currentTabId) {
+          m.classList.add("active");
+        } else {
+          m.classList.remove("active");
         }
+      });
+
+      // Gestisci la visibilità dei bottoni di scorrimento pagina (frecce in basso)
+      const prevBtn = document.querySelector(".prev-page-btn");
+      const nextBtn = document.querySelector(".next-page-btn");
+      if (prevBtn) {
+        prevBtn.style.visibility = currentPageIndex > 0 ? "visible" : "hidden";
+      }
+      if (nextBtn) {
+        nextBtn.style.visibility =
+          currentPageIndex < pages.length - 1 ? "visible" : "hidden";
+      }
+
+      // Mostra l'intera riga `.scroll-btn-row` e abilita lo scroll SOLO nella scheda 'diary'.
+      // Per 'diary' e 'tips' nascondi completamente la riga e disattiva lo scroll.
+      if (currentTabId === "diary") {
+        scrollBtnRows.forEach((row) => (row.style.display = "flex"));
+        postit.style.display = "flex";
+        pageNavBottom.style.display = "flex";
+        if (leftScrollArea) leftScrollArea.classList.remove("no-scroll");
+        if (rightScrollArea) rightScrollArea.classList.remove("no-scroll");
+      } else {
+        postit.style.display = "none";
+        scrollBtnRows.forEach((row) => (row.style.display = "none"));
+        pageNavBottom.style.display = "none";
+        if (leftScrollArea) leftScrollArea.classList.add("no-scroll");
+        if (rightScrollArea) rightScrollArea.classList.add("no-scroll");
+      }
     }
+  }
 
-    // Inizializza con il primo tab
-    updateDiary();
+  // Inizializza con il primo tab
+  updateDiary();
 
+  markers.forEach((marker) => {
+    marker.addEventListener("click", () => {
+      const tabId = marker.getAttribute("data-tab");
 
-    markers.forEach(marker => {
-        marker.addEventListener('click', () => {
-            const tabId = marker.getAttribute('data-tab');
+      // Se clicco su Tape, apro la schermata Tape della navbar
+      if (tabId === "tapes") {
+        const navTape = document.getElementById("nav-tape");
 
-            // Se clicco su Tape, apro la schermata Tape della navbar
-            if (tabId === 'tapes') {
-                const navTape = document.getElementById('nav-tape');
+        if (navTape) {
+          navTape.click();
+        }
 
-                if (navTape) {
-                    navTape.click();
-                }
+        return;
+      }
 
-                return;
-            }
+      // Per Diary, Pics e Links aggiorno il contenuto del diario
+      if (!diaryData[tabId]) {
+        console.error("Scheda non trovata in diaryData:", tabId);
+        return;
+      }
 
-            // Per Diary, Pics e Links aggiorno il contenuto del diario
-            if (!diaryData[tabId]) {
-                console.error('Scheda non trovata in diaryData:', tabId);
-                return;
-            }
+      currentTabId = tabId;
+      currentPageIndex = 0;
+      updateDiary();
+    });
+  });
 
-            currentTabId = tabId;
-            currentPageIndex = 0;
-            updateDiary();
+  // Frecce navigazione per scorrere le pagine all'interno del tab
+  const prevBtn = document.querySelector(".prev-page-btn");
+  const nextBtn = document.querySelector(".next-page-btn");
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      const pages = diaryData[currentTabId];
+      if (currentPageIndex > 0) {
+        currentPageIndex--;
+        updateDiary();
+        if (leftScrollArea) leftScrollArea.scrollTop = 0;
+        if (rightScrollArea) rightScrollArea.scrollTop = 0;
+      }
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      const pages = diaryData[currentTabId];
+      if (currentPageIndex < pages.length - 1) {
+        currentPageIndex++;
+        updateDiary();
+        if (leftScrollArea) leftScrollArea.scrollTop = 0;
+        if (rightScrollArea) rightScrollArea.scrollTop = 0;
+      }
+    });
+  }
+
+  // Azione dei bottoni "scroll down" per scorrere il contenuto della pagina corrente (attivo solo in links)
+  if (scrollLeftBtn) {
+    scrollLeftBtn.addEventListener("click", () => {
+      if (leftScrollArea) {
+        leftScrollArea.scrollTo({
+          top: leftScrollArea.scrollHeight,
+          behavior: "smooth",
         });
+      }
+    });
+  }
+
+  if (scrollRightBtn) {
+    scrollRightBtn.addEventListener("click", () => {
+      if (rightScrollArea) {
+        rightScrollArea.scrollTo({
+          top: rightScrollArea.scrollHeight,
+          behavior: "smooth",
+        });
+      }
+    });
+  }
+  const guestbookForm = document.getElementById("guestbook-form");
+  const entriesContainer = document.getElementById("guestbook-entries");
+  const paginationControls = document.getElementById("guestbook-pagination");
+  const gbPrevBtn = document.getElementById("gb-prev-btn");
+  const gbNextBtn = document.getElementById("gb-next-btn");
+  const pageInfo = document.getElementById("gb-page-info");
+
+  // Riferimenti agli input e al fumetto
+  const nameInput = document.getElementById("gb-name");
+  const countryInput = document.getElementById("gb-country");
+  const messageInput = document.getElementById("gb-message");
+  const bubbleTip = document.getElementById("gb-bubble-tip");
+
+  const ENTRIES_PER_PAGE = 5;
+  let currentGbPage = 1;
+
+  let guestbookData =
+    JSON.parse(localStorage.getItem("guestbookEntries")) || [];
+
+  function renderGuestbook() {
+    entriesContainer.innerHTML = "";
+    const totalPages = Math.max(
+      1,
+      Math.ceil(guestbookData.length / ENTRIES_PER_PAGE),
+    );
+    if (currentGbPage > totalPages) currentGbPage = totalPages;
+
+    const startIndex = (currentGbPage - 1) * ENTRIES_PER_PAGE;
+    const endIndex = Math.min(
+      startIndex + ENTRIES_PER_PAGE,
+      guestbookData.length,
+    );
+    const pageData = guestbookData.slice(startIndex, endIndex);
+
+    pageData.forEach((entry) => {
+      const li = document.createElement("li");
+      li.className = "gb-entry";
+      li.innerHTML = `<strong>${entry.name}</strong> <em>(${entry.country})</em> at ${entry.time}: <br> ${entry.message}`;
+      entriesContainer.appendChild(li);
     });
 
+    if (guestbookData.length > ENTRIES_PER_PAGE) {
+      if (paginationControls) paginationControls.style.display = "flex";
+      if (pageInfo)
+        pageInfo.innerText = `Page ${currentGbPage} of ${totalPages}`;
+      if (gbPrevBtn) {
+        gbPrevBtn.style.opacity = currentGbPage === 1 ? "0.5" : "1";
+        gbPrevBtn.style.pointerEvents = currentGbPage === 1 ? "none" : "auto";
+      }
+      if (gbNextBtn) {
+        gbNextBtn.style.opacity = currentGbPage === totalPages ? "0.5" : "1";
+        gbNextBtn.style.pointerEvents =
+          currentGbPage === totalPages ? "none" : "auto";
+      }
+    } else {
+      if (paginationControls) paginationControls.style.display = "none";
+    }
+  }
 
-    // Frecce navigazione per scorrere le pagine all'interno del tab
-    const prevBtn = document.querySelector('.prev-page-btn');
-    const nextBtn = document.querySelector('.next-page-btn');
+  if (gbPrevBtn) {
+    gbPrevBtn.addEventListener("click", () => {
+      if (currentGbPage > 1) {
+        currentGbPage--;
+        renderGuestbook();
+      }
+    });
+  }
 
-    if (prevBtn) {
-        prevBtn.addEventListener('click', () => {
-            const pages = diaryData[currentTabId];
-            if (currentPageIndex > 0) {
-                currentPageIndex--;
-                updateDiary();
-                if (leftScrollArea) leftScrollArea.scrollTop = 0;
-                if (rightScrollArea) rightScrollArea.scrollTop = 0;
-            }
-        });
+  if (gbNextBtn) {
+    gbNextBtn.addEventListener("click", () => {
+      const totalPages = Math.ceil(guestbookData.length / ENTRIES_PER_PAGE);
+      if (currentGbPage < totalPages) {
+        currentGbPage++;
+        renderGuestbook();
+      }
+    });
+  }
+
+  renderGuestbook();
+
+  // Gestione invio del form
+  guestbookForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = nameInput.value.trim();
+    const country = countryInput.value.trim();
+    const message = messageInput.value.trim();
+
+    // Se manca nome o paese, mostra il fumetto personalizzato
+    if (!name || !country) {
+      if (bubbleTip) {
+        bubbleTip.style.display = "flex";
+        if (!name) nameInput.focus();
+        else countryInput.focus();
+      }
+      return;
     }
 
-    if (nextBtn) {
-        nextBtn.addEventListener('click', () => {
-            const pages = diaryData[currentTabId];
-            if (currentPageIndex < pages.length - 1) {
-                currentPageIndex++;
-                updateDiary();
-                if (leftScrollArea) leftScrollArea.scrollTop = 0;
-                if (rightScrollArea) rightScrollArea.scrollTop = 0;
-            }
-        });
+    // Se manca solo il messaggio (opzionale, gestiscilo se serve)
+    if (!message) {
+      messageInput.focus();
+      return;
     }
 
-    // Azione dei bottoni "scroll down" per scorrere il contenuto della pagina corrente (attivo solo in links)
-    if (scrollLeftBtn) {
-        scrollLeftBtn.addEventListener('click', () => {
-            if (leftScrollArea) {
-                leftScrollArea.scrollTo({ top: leftScrollArea.scrollHeight, behavior: 'smooth' });
-            }
-        });
-    }
+    const now = new Date();
+    const timeString = now.toLocaleTimeString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
 
-    if (scrollRightBtn) {
-        scrollRightBtn.addEventListener('click', () => {
-            if (rightScrollArea) {
-                rightScrollArea.scrollTo({ top: rightScrollArea.scrollHeight, behavior: 'smooth' });
-            }
-        });
-    }
-    const guestbookForm = document.getElementById('guestbook-form');
-    const entriesContainer = document.getElementById('guestbook-entries');
-    const paginationControls = document.getElementById('guestbook-pagination');
-    const gbPrevBtn = document.getElementById('gb-prev-btn');
-    const gbNextBtn = document.getElementById('gb-next-btn');
-    const pageInfo = document.getElementById('gb-page-info');
+    const entry = { name, country, time: timeString, message };
+    guestbookData.unshift(entry);
+    localStorage.setItem("guestbookEntries", JSON.stringify(guestbookData));
 
-    // Riferimenti agli input e al fumetto
-    const nameInput = document.getElementById('gb-name');
-    const countryInput = document.getElementById('gb-country');
-    const messageInput = document.getElementById('gb-message');
-    const bubbleTip = document.getElementById('gb-bubble-tip');
-
-    const ENTRIES_PER_PAGE = 5;
-    let currentGbPage = 1;
-
-    let guestbookData = JSON.parse(localStorage.getItem('guestbookEntries')) || [];
-
-    function renderGuestbook() {
-        entriesContainer.innerHTML = '';
-        const totalPages = Math.max(1, Math.ceil(guestbookData.length / ENTRIES_PER_PAGE));
-        if (currentGbPage > totalPages) currentGbPage = totalPages;
-
-        const startIndex = (currentGbPage - 1) * ENTRIES_PER_PAGE;
-        const endIndex = Math.min(startIndex + ENTRIES_PER_PAGE, guestbookData.length);
-        const pageData = guestbookData.slice(startIndex, endIndex);
-
-        pageData.forEach(entry => {
-            const li = document.createElement('li');
-            li.className = 'gb-entry';
-            li.innerHTML = `<strong>${entry.name}</strong> <em>(${entry.country})</em> at ${entry.time}: <br> ${entry.message}`;
-            entriesContainer.appendChild(li);
-        });
-
-        if (guestbookData.length > ENTRIES_PER_PAGE) {
-            if (paginationControls) paginationControls.style.display = 'flex';
-            if (pageInfo) pageInfo.innerText = `Page ${currentGbPage} of ${totalPages}`;
-            if (gbPrevBtn) {
-                gbPrevBtn.style.opacity = currentGbPage === 1 ? '0.5' : '1';
-                gbPrevBtn.style.pointerEvents = currentGbPage === 1 ? 'none' : 'auto';
-            }
-            if (gbNextBtn) {
-                gbNextBtn.style.opacity = currentGbPage === totalPages ? '0.5' : '1';
-                gbNextBtn.style.pointerEvents = currentGbPage === totalPages ? 'none' : 'auto';
-            }
-        } else {
-            if (paginationControls) paginationControls.style.display = 'none';
-        }
-    }
-
-    if (gbPrevBtn) {
-        gbPrevBtn.addEventListener('click', () => {
-            if (currentGbPage > 1) { currentGbPage--; renderGuestbook(); }
-        });
-    }
-
-    if (gbNextBtn) {
-        gbNextBtn.addEventListener('click', () => {
-            const totalPages = Math.ceil(guestbookData.length / ENTRIES_PER_PAGE);
-            if (currentGbPage < totalPages) { currentGbPage++; renderGuestbook(); }
-        });
-    }
-
+    currentGbPage = 1;
     renderGuestbook();
 
-    // Gestione invio del form
-    guestbookForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+    nameInput.value = "";
+    countryInput.value = "";
+    messageInput.value = "";
+    if (bubbleTip) bubbleTip.style.display = "none";
+  });
 
-        const name = nameInput.value.trim();
-        const country = countryInput.value.trim();
-        const message = messageInput.value.trim();
+  // Mostra il fumetto se si cerca di scrivere il messaggio prima di nome e paese
+  messageInput.addEventListener("focus", () => {
+    if (!nameInput.value.trim() || !countryInput.value.trim()) {
+      if (bubbleTip) bubbleTip.style.display = "flex";
+    }
+  });
 
-        // Se manca nome o paese, mostra il fumetto personalizzato
-        if (!name || !country) {
-            if (bubbleTip) {
-                bubbleTip.style.display = 'flex';
-                if (!name) nameInput.focus();
-                else countryInput.focus();
-            }
-            return;
-        }
-
-        // Se manca solo il messaggio (opzionale, gestiscilo se serve)
-        if (!message) {
-            messageInput.focus();
-            return;
-        }
-
-        const now = new Date();
-        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
-        const entry = { name, country, time: timeString, message };
-        guestbookData.unshift(entry);
-        localStorage.setItem('guestbookEntries', JSON.stringify(guestbookData));
-
-        currentGbPage = 1;
-        renderGuestbook();
-
-        nameInput.value = '';
-        countryInput.value = '';
-        messageInput.value = '';
-        if (bubbleTip) bubbleTip.style.display = 'none';
+  // Nasconde il fumetto quando entrambi i campi sono compilati
+  [nameInput, countryInput].forEach((input) => {
+    input.addEventListener("input", () => {
+      if (nameInput.value.trim() && countryInput.value.trim()) {
+        if (bubbleTip) bubbleTip.style.display = "none";
+      }
     });
-
-    // Mostra il fumetto se si cerca di scrivere il messaggio prima di nome e paese
-    messageInput.addEventListener('focus', () => {
-        if (!nameInput.value.trim() || !countryInput.value.trim()) {
-            if (bubbleTip) bubbleTip.style.display = 'flex';
-        }
+    input.addEventListener("focus", () => {
+      if (nameInput.value.trim() && countryInput.value.trim()) {
+        if (bubbleTip) bubbleTip.style.display = "none";
+      }
     });
-
-    // Nasconde il fumetto quando entrambi i campi sono compilati
-    [nameInput, countryInput].forEach(input => {
-        input.addEventListener('input', () => {
-            if (nameInput.value.trim() && countryInput.value.trim()) {
-                if (bubbleTip) bubbleTip.style.display = 'none';
-            }
-        });
-        input.addEventListener('focus', () => {
-            if (nameInput.value.trim() && countryInput.value.trim()) {
-                if (bubbleTip) bubbleTip.style.display = 'none';
-            }
-        });
-    });
+  });
 });
 // --- Calendar Logic ---
 (function () {
-    const calendarContainer = document.getElementById('calendar-container');
-    if (!calendarContainer) return;
+  const calendarContainer = document.getElementById("calendar-container");
+  if (!calendarContainer) return;
 
-    let currentDate = new Date();
-    currentDate.setDate(1);
+  let currentDate = new Date();
+  currentDate.setDate(1);
 
-    function renderCalendar(date) {
-        const year = date.getFullYear();
-        const month = date.getMonth();
+  function renderCalendar(date) {
+    const year = date.getFullYear();
+    const month = date.getMonth();
 
-        const monthNames = [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"
-        ];
+    const monthNames = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
 
-        // Giorno della settimana del primo giorno del mese
-        const firstDay = new Date(year, month, 1).getDay();
+    // Giorno della settimana del primo giorno del mese
+    const firstDay = new Date(year, month, 1).getDay();
 
-        // Numero di giorni nel mese
-        const daysInMonth = new Date(year, month + 1, 0).getDate();
+    // Numero di giorni nel mese
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-        // Data di oggi
-        const today = new Date();
+    // Data di oggi
+    const today = new Date();
 
-        let html = `
+    let html = `
             <div style="
                 display:flex;
                 justify-content:space-between;
@@ -621,37 +644,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 <tr>
         `;
 
-        let dayCount = 1;
+    let dayCount = 1;
 
-        // 42 celle = 6 settimane
-        for (let i = 0; i < 42; i++) {
+    // 42 celle = 6 settimane
+    for (let i = 0; i < 42; i++) {
+      // Celle vuote prima dell'inizio del mese
+      if (i < firstDay || dayCount > daysInMonth) {
+        html += `<td></td>`;
+      } else {
+        // OGGI
+        const isToday =
+          year === today.getFullYear() &&
+          month === today.getMonth() &&
+          dayCount === today.getDate();
 
-            // Celle vuote prima dell'inizio del mese
-            if (i < firstDay || dayCount > daysInMonth) {
-                html += `<td></td>`;
+        // D-DAY: 25 Novembre 2026
+        const isDDay = year === 2026 && month === 10 && dayCount === 25;
 
-            } else {
+        let classes = 'class="pink-text"';
+        let content = dayCount;
 
-                // OGGI
-                const isToday =
-                    year === today.getFullYear() &&
-                    month === today.getMonth() &&
-                    dayCount === today.getDate();
+        // Il D-Day ha la precedenza visiva
+        if (isDDay) {
+          classes = 'class="pink-text d-day"';
 
-                // D-DAY: 25 Novembre 2026
-                const isDDay =
-                    year === 2026 &&
-                    month === 10 &&
-                    dayCount === 25;
-
-                let classes = 'class="pink-text"';
-                let content = dayCount;
-
-                // Il D-Day ha la precedenza visiva
-                if (isDDay) {
-                    classes = 'class="pink-text d-day"';
-
-                    content = `
+          content = `
                         <span class="d-day-number" title="D-Day!!!">
                             ${dayCount}
                         </span>
@@ -659,100 +676,93 @@ document.addEventListener('DOMContentLoaded', () => {
                             D-DAY!!!
                         </span>
                     `;
+        } else if (isToday) {
+          classes = 'class="current-day"';
+        }
 
-
-                } else if (isToday) {
-                    classes = 'class="current-day"';
-                }
-
-                html += `
+        html += `
                     <td ${classes}>
                         ${content}
                     </td>
                 `;
 
-                dayCount++;
-            }
+        dayCount++;
+      }
 
-            // Nuova riga ogni 7 giorni
-            if ((i + 1) % 7 === 0) {
-                html += `</tr><tr>`;
-            }
-        }
+      // Nuova riga ogni 7 giorni
+      if ((i + 1) % 7 === 0) {
+        html += `</tr><tr>`;
+      }
+    }
 
-        html += `
+    html += `
                 </tr>
             </table>
         `;
 
-        calendarContainer.innerHTML = html;
+    calendarContainer.innerHTML = html;
 
-        // Mese precedente
-        document
-            .getElementById('prev-month')
-            .addEventListener('click', () => {
-                renderCalendar(new Date(year, month - 1, 1));
-            });
+    // Mese precedente
+    document.getElementById("prev-month").addEventListener("click", () => {
+      renderCalendar(new Date(year, month - 1, 1));
+    });
 
-        // Mese successivo
-        document
-            .getElementById('next-month')
-            .addEventListener('click', () => {
-                renderCalendar(new Date(year, month + 1, 1));
-            });
-    }
+    // Mese successivo
+    document.getElementById("next-month").addEventListener("click", () => {
+      renderCalendar(new Date(year, month + 1, 1));
+    });
+  }
 
-    renderCalendar(currentDate);
+  renderCalendar(currentDate);
 })();
 
 //Navigation logic
 (function () {
-    const container = document.querySelector('.container');
-    if (!container) return;
+  const container = document.querySelector(".container");
+  if (!container) return;
 
-    const footerElement = container.querySelector('footer');
-    const homeContent = document.getElementById('home-content');
-    const colMiddle = document.querySelector('.main-box');
+  const footerElement = container.querySelector("footer");
+  const homeContent = document.getElementById("home-content");
+  const colMiddle = document.querySelector(".main-box");
 
-    // Salva il contenuto iniziale della main-box (per Home o About/Blueprint se necessario)
-    const initialHomeContent = colMiddle ? colMiddle.innerHTML : '';
+  // Salva il contenuto iniziale della main-box (per Home o About/Blueprint se necessario)
+  const initialHomeContent = colMiddle ? colMiddle.innerHTML : "";
 
-    const navHome = document.getElementById('nav-home');
-    const navAbout = document.getElementById('nav-about');
-    const navBlueprint = document.getElementById('nav-blueprint');
-    const navTape = document.getElementById('nav-tape');
+  const navHome = document.getElementById("nav-home");
+  const navAbout = document.getElementById("nav-about");
+  const navBlueprint = document.getElementById("nav-blueprint");
+  const navTape = document.getElementById("nav-tape");
 
-    const navLinks = [navHome, navAbout, navBlueprint, navTape].filter(Boolean);
+  const navLinks = [navHome, navAbout, navBlueprint, navTape].filter(Boolean);
 
+  // Funzione per ripulire schermate speciali (come Tape) e rimettere la Home
+  function showStandardLayout() {
+    const existingCustom = document.getElementById("dynamic-content-area");
+    if (existingCustom) existingCustom.remove();
 
-    // Funzione per ripulire schermate speciali (come Tape) e rimettere la Home
-    function showStandardLayout() {
-        const existingCustom = document.getElementById('dynamic-content-area');
-        if (existingCustom) existingCustom.remove();
-
-        if (homeContent) {
-            homeContent.style.display = 'block'; // Mostra tutto il blocco della home
-        }
+    if (homeContent) {
+      homeContent.style.display = "block"; // Mostra tutto il blocco della home
     }
+  }
 
-    // HOME CLICK
-    if (navHome) {
-        navHome.addEventListener('click', (e) => {
-            e.preventDefault();
-            //setActiveNav(navHome);
-            showStandardLayout();
-            if (colMiddle) colMiddle.innerHTML = initialHomeContent;
-        });
-    }
+  // HOME CLICK
+  if (navHome) {
+    navHome.addEventListener("click", (e) => {
+      e.preventDefault();
+      //setActiveNav(navHome);
+      showStandardLayout();
+      if (colMiddle) colMiddle.innerHTML = initialHomeContent;
+    });
+  }
 
-    // ABOUT CLICK
-    if (navAbout) {
-        navAbout.addEventListener('click', (e) => {
-            e.preventDefault();
-            //setActiveNav(navAbout);
-            showStandardLayout();
-            if (colMiddle) {
-                colMiddle.innerHTML = `
+  // ABOUT CLICK
+  if (navAbout) {
+    navAbout.addEventListener("click", (e) => {
+      e.preventDefault();
+      //setActiveNav(navAbout);
+      showStandardLayout();
+      if (colMiddle) {
+        colMiddle.innerHTML = `
                     <div class="box-header">ABOUT</div>
                     <div class="box-content center-text" style="padding-bottom:3px">
                         <p class="pink-text" style="text-align: left;margin-bottom:0px">Hello there!</p>
@@ -779,18 +789,18 @@ document.addEventListener('DOMContentLoaded', () => {
                             I love the <span class="pink-text">old internet</span>, I've grown up playing
                             on site like girl.go.games, watching series on yt and researching on wikipedia. This is my <span class="pink-text">tribute</span> to it!</p>
                     </div>`;
-            }
-        });
-    }
+      }
+    });
+  }
 
-    // BLUEPRINT CLICK
-    if (navBlueprint) {
-        navBlueprint.addEventListener('click', (e) => {
-            e.preventDefault();
-            //setActiveNav(navBlueprint);
-            showStandardLayout();
-            if (colMiddle) {
-                colMiddle.innerHTML = `
+  // BLUEPRINT CLICK
+  if (navBlueprint) {
+    navBlueprint.addEventListener("click", (e) => {
+      e.preventDefault();
+      //setActiveNav(navBlueprint);
+      showStandardLayout();
+      if (colMiddle) {
+        colMiddle.innerHTML = `
                     <div class="box-header">BLUEPRINT</div>
                     <div class="box-content center-text">
                         <div style="display: flex; flex-direction: row;">
@@ -819,45 +829,44 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <p>BE A GIRL. HACK THE STACK.<span class='pink-text'> BRING BACK THE OLD INTERNET.</span></p>
                     </div>`;
-            }
-        });
-    }
+      }
+    });
+  }
 
-    // TAPE CLICK (Fa sparire tutto il blocco home-content e mostra il player tape)
-    if (navTape) {
-        navTape.addEventListener('click', (e) => {
-            e.preventDefault();
-            //setActiveNav(navTape);
+  // TAPE CLICK (Fa sparire tutto il blocco home-content e mostra il player tape)
+  if (navTape) {
+    navTape.addEventListener("click", (e) => {
+      e.preventDefault();
+      //setActiveNav(navTape);
 
-            // Nasconde completamente la home
-            if (homeContent) homeContent.style.display = 'none';
+      // Nasconde completamente la home
+      if (homeContent) homeContent.style.display = "none";
 
-            // Evitiamo duplicati se si clicca più volte
-            const existingCustom = document.getElementById('dynamic-content-area');
-            if (existingCustom) existingCustom.remove();
+      // Evitiamo duplicati se si clicca più volte
+      const existingCustom = document.getElementById("dynamic-content-area");
+      if (existingCustom) existingCustom.remove();
 
-            // Creiamo il contenitore per la schermata TAPE
-            const tapeWrapper = document.createElement('div');
-            tapeWrapper.id = 'dynamic-content-area';
-            tapeWrapper.style.width = '100%';
-            tapeWrapper.style.display = 'flex';
-            tapeWrapper.style.flexDirection = 'column';
-            tapeWrapper.style.alignItems = 'center';
-            tapeWrapper.style.margin = '20px 0';
+      // Creiamo il contenitore per la schermata TAPE
+      const tapeWrapper = document.createElement("div");
+      tapeWrapper.id = "dynamic-content-area";
+      tapeWrapper.style.width = "100%";
+      tapeWrapper.style.display = "flex";
+      tapeWrapper.style.flexDirection = "column";
+      tapeWrapper.style.alignItems = "center";
+      tapeWrapper.style.margin = "20px 0";
 
-            tapeWrapper.innerHTML = `
+      tapeWrapper.innerHTML = `
                 <!-- Box superiore con la descrizione -->
                 <div class="box" style="width: 703px; margin-bottom: 25px;">
                     <div class="box-header">TAPE</div>
                     <div class="box-content" style="display: flex; gap: 20px; align-items: flex-start; padding: 20px;padding-bottom:2px">
                         <div style="flex: 1; font-size: 22px; line-height: 24px;">
                             <p style="margin: 0px;">The following video shows the whole <span class="pink-text">process</span> of building the Bratz cyberdeck, it contains my breakdowns, my cries, my blood, my soul, my everything!</p>
-                            <div style="display: inline-flex; align-items: center; gap: 8px;"><p style="margin: 0px; margin-top:15px">I spent <span class="pink-text">three months</span> giving birth to my baby-.</p> <img src="img/gatito.png" alt="Video Preview" style="width: 42px"></div>
+                            <div style="display: inline-flex; align-items: flex-end;"><p style="margin: 0px; margin-top:15px">I spent <span class="pink-text">three months</span> giving birth to my baby-</p> <img src="img/gatito.png" alt="Video Preview" style="width: 42px"></div>
                              <p style="margin: 0px;">So please be gentle and enjoy the show :3</p>
-                            <p style="margin-top:15px">You can find it also on yt (<a class="pink-text" href="https://www.youtube.com/watch?v=aumh4oknVuM&t=106s" target="_blank">click here</a>).</p>
                         </div>
                         <div style="flex-shrink: 0; text-align: center;">
-                            <img src="img/elgatororar.png" alt="Video Preview" style="width: 188px; border-radius: 8px;">
+                            <img src="img/elgatororar.png" alt="Video Preview" style="width: 163px; border-radius: 8px;">
                         </div>
                     </div>
                     <p style="padding:20px;padding-top:2px"> N.b. I recorded it on the phone so it's a <i>little bit low quality</i> and I speak in <span class="pink-text">italian</span>, because my english is horrible, BUT you can activate the <span class="pink-text">automatic translation</span> in english (it's almost all right).</p>
@@ -866,40 +875,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 <!-- Finestra inferiore che usa img/tape.png come sfondo -->
                 <div style="width: 1176px; height: 668px; background: url('img/tape.png') no-repeat center center; background-size: 100% 100%; border: none; position: relative;">
-
+                    <iframe 
+                        src="https://www.youtube.com/embed/oqOTk7Dxmy8" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen 
+                        style="position: absolute; top: 96px; left: 42px; width: 1060px; height: 536px; border: none; border-radius: 4px;">
+                    </iframe>
                 </div>`;
 
-            container.insertBefore(tapeWrapper, footerElement);
+      container.insertBefore(tapeWrapper, footerElement);
 
-            const tapeBackBtn = document.getElementById('tape-back-btn');
-            if (tapeBackBtn) {
-                tapeBackBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    showStandardLayout();
-                    if (colMiddle) colMiddle.innerHTML = initialHomeContent;
-                });
-            }
+      const tapeBackBtn = document.getElementById("tape-back-btn");
+      if (tapeBackBtn) {
+        tapeBackBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          showStandardLayout();
+          if (colMiddle) colMiddle.innerHTML = initialHomeContent;
         });
-    }
-})();// --- Music Player Logic ---
+      }
+    });
+  }
+})(); // --- Music Player Logic ---
 (function () {
-    const playBtn = document.getElementById('play-music-btn');
-    const audio = document.getElementById('bg-music');
-    const cdDisc = document.getElementById('cd-disc');
-    const playText = document.getElementById('play');
+  const playBtn = document.getElementById("play-music-btn");
+  const audio = document.getElementById("bg-music");
+  const cdDisc = document.getElementById("cd-disc");
+  const playText = document.getElementById("play");
 
-    if (playBtn && audio && cdDisc) {
-        playBtn.addEventListener('click', () => {
-            if (audio.paused) {
-                audio.play();
-                cdDisc.classList.add('playing');
-                playText.innerText = 'stop';
-            } else {
-                audio.pause();
-                cdDisc.classList.remove('playing');
-                playText.innerText = 'start';
-            }
-        });
-    }
+  if (playBtn && audio && cdDisc) {
+    playBtn.addEventListener("click", () => {
+      if (audio.paused) {
+        audio.play();
+        cdDisc.classList.add("playing");
+        playText.innerText = "stop";
+      } else {
+        audio.pause();
+        cdDisc.classList.remove("playing");
+        playText.innerText = "start";
+      }
+    });
+  }
 })();
-
