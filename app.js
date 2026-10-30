@@ -957,6 +957,9 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       //setActiveNav(navTape);
 
+      // Riporta la visuale in alto con scroll fluido
+      window.scrollTo({ top: 0, behavior: "smooth" });
+
       // Nasconde completamente la home
       if (homeContent) homeContent.style.display = "none";
 
@@ -992,7 +995,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
 
                 <!-- Finestra inferiore che usa img/tape.png come sfondo -->
-                <div style="width: 1176px; height: 668px; background: url('img/tape.png') no-repeat center center; background-size: 100% 100%; border: none; position: relative;">
+                <div style="width: 889px; height: 557px; background: url('img/tape.png') no-repeat center center; background-size: 100% 100%; border: none; position: relative;">
                     <iframe 
                         src="https://www.youtube.com/embed/oqOTk7Dxmy8" 
                         title="YouTube video player" 
@@ -1000,19 +1003,27 @@ document.addEventListener("DOMContentLoaded", () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerpolicy="strict-origin-when-cross-origin" 
                         allowfullscreen 
-                        style="position: absolute; top: 96px; left: 42px; width: 1060px; height: 536px; border: none; border-radius: 4px;">
+                        style="position: absolute; top: 67px; left: 7px; width: 854px; height: 480px; border: none; border-radius: 4px;">
                     </iframe>
                 </div>`;
 
       container.insertBefore(tapeWrapper, footerElement);
 
+      function returnToHome(e) {
+        if (e) e.preventDefault();
+        showStandardLayout();
+        if (colMiddle) colMiddle.innerHTML = initialHomeContent;
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
       const tapeBackBtn = document.getElementById("tape-back-btn");
       if (tapeBackBtn) {
-        tapeBackBtn.addEventListener("click", (e) => {
-          e.preventDefault();
-          showStandardLayout();
-          if (colMiddle) colMiddle.innerHTML = initialHomeContent;
-        });
+        tapeBackBtn.addEventListener("click", returnToHome);
+      }
+
+      const tapeBackBottomBtn = document.getElementById("tape-back-bottom-btn");
+      if (tapeBackBottomBtn) {
+        tapeBackBottomBtn.addEventListener("click", returnToHome);
       }
     });
   }

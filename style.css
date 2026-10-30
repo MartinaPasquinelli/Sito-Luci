@@ -1536,3 +1536,35 @@ header {
   transform: scale(1.12);
   background: #ffe4e1;
 }
+
+
+/* =========================================
+   TAPE BACK BUTTON (Y2K retro style)
+========================================= */
+.tape-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 2px solid var(--hot-pink);
+  border-radius: 20px;
+  padding: 4px 16px;
+  font-family: var(--font-main);
+  font-size: 22px;
+  line-height: 1;
+  color: #000;
+  cursor: url("img/pointer_hand.png"), pointer;
+  box-shadow:
+    inset -3px -3px 4px #ffcae4,
+    inset 4px 0px 4px #ffcae4;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.tape-back-btn:hover {
+  transform: scale(1.05);
+  background: #ffe4e1;
+}
+
+.tape-back-btn:active {
+  transform: scale(0.97);
+}
