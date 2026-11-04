@@ -1285,7 +1285,7 @@ header {
   border-radius: 12px;
   font-family: var(--font-main);
   font-size: 18px;
-  color: #111;
+  color: var(--text-color);
   box-shadow:
     inset -3px -3px 4px #ffcae4,
     inset 6px 0px 4px #ffcae4;
