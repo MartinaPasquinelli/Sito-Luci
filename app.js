@@ -621,14 +621,19 @@ document.addEventListener("DOMContentLoaded", () => {
   function stepPic(delta) {
     if (picsGalleryList.length === 0) return;
     currentPicIndex =
-      (currentPicIndex + delta + picsGalleryList.length) % picsGalleryList.length;
+      (currentPicIndex + delta + picsGalleryList.length) %
+      picsGalleryList.length;
     updateLightboxDisplay();
   }
 
   // Delega click sulle immagini con classe .pics
   document.addEventListener("click", (e) => {
     const target = e.target;
-    if (target && target.tagName === "IMG" && target.classList.contains("pics")) {
+    if (
+      target &&
+      target.tagName === "IMG" &&
+      target.classList.contains("pics")
+    ) {
       e.preventDefault();
       openLightbox(target.getAttribute("src"));
     }
@@ -1038,9 +1043,15 @@ document.addEventListener("DOMContentLoaded", () => {
   if (playBtn && audio && cdDisc) {
     function toggleMusic() {
       if (audio.paused) {
-        audio.play();
-        cdDisc.classList.add("playing");
-        playText.innerText = "stop";
+        audio
+          .play()
+          .then(() => {
+            cdDisc.classList.add("playing");
+            playText.innerText = "stop";
+          })
+          .catch((error) => {
+            console.error("Errore nella riproduzione:", error);
+          });
       } else {
         audio.pause();
         cdDisc.classList.remove("playing");
