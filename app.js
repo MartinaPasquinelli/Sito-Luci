@@ -6,7 +6,7 @@ const diaryData = {
                 <p><span class="phase-heading">PHASE 1: THE IDEA</span><br>
                     One day I was scrolling on Titktok and I found this <span class="pink-text">reel about creating a 
                     pc inside a purse</span> with the shape of a shell and the aesthetic of a mermaid.
-                    I was stunned! So I decided I wanted to create one of self.
+                    I was stunned! So I decided to create one of myself.
                     <i>MAN, it look so easy when it's in reel form at speed x2. </i>
                 </p>
                 <P>Anyway, I stalked the profile of the content creator (Ube Boobey) 
@@ -14,9 +14,9 @@ const diaryData = {
                     and in the description there are all the links to the hardware components she used. I found it really fascinating because
                     the girl had <span class="pink-text">0 previous experience</span> and yet she managed to assemble the pc giving it the vibes she wanted!
                 </p> 
-                <p>Ube Boobey decided to make a pc running on a Raspberry pi 2,
+                <p>Ube Boobey decided to make a pc running on a Raspberry Pi 2,
                     but I wanted a pc that worked a little better and more suitable for 
-                    an even more begginer in this field like me. I searched for a <span class="pink-text">Raspberry pi 5</span>.
+                    an even more begginer in this field like me. I searched for a <span class="pink-text">Raspberry Pi 5</span>.
                 </p>   
                 <p>I was undecided on which online platform to use to buy the tech components. 
                     I asked a friend who knows everything about this kind of projects
@@ -25,7 +25,7 @@ const diaryData = {
                     or doesn't fit.
                 </p>
                 <p>
-                    The goal was to find a <span class="pink-text"> monitor</span> and a Raspberry pi 5 (the basic component for a diy pc),
+                    The goal was to find a <span class="pink-text"> monitor</span> and a Raspberry Pi 5 (the basic component for a diy pc),
                     then I added <span class="pink-text">a bluetooth  keyboard, a mic, some speakers and a webcam</span>.
                     As I said, I wanted my pc to be performative as a normal one (<i>or mostly like it</i>).
                 </p>
@@ -49,7 +49,7 @@ const diaryData = {
                     when I went there I found out that THE LITTLE CUTEST FUR MONSTER I EVER MET
                     had <span class="pink-text">thrown a ROCK</span> (<i>my sister collects them</i>), 
                     <span class="pink-text">A GIANT ONE</span>, from the top of the last shelf and 
-                    <i>IT MISSED MY ELECTRONIC COMPONENTS JUST BOUGHT FOR INCHES, INCHESSS!!!</i> I almost fainted. 
+                    <i>IT MISSED MY ELECTRONIC COMPONENTS FOR INCHES, INCHESSS!!!</i> I almost fainted. 
                 </p>
                 <p>
                     After that day I decided that was time to assemble the whole thing as soon as possible. 
@@ -65,7 +65,7 @@ const diaryData = {
                     The idea was to get both of them with USB cables so that I could easily connect them to the Raspberry Pi.
                 </p>
                 <p>
-                    I forgot to tell you that I also bought a sort of <span class="pink-text">protective case for the Raspberry</span> 
+                    I forgot to tell you that I also bought a sort of <span class="pink-text">protective case for the Raspberry Pi</span> 
                     with a fan that could cool-off the whole system. The new pieces were perfect match for the others. 
                     So in a few weeks I ended up having <i>the organs</i> of my diy pc built in the right place.
                 </p>
@@ -92,11 +92,11 @@ const diaryData = {
                 </p>
                 <p>
                     I scrolled on my phone looking for thousands of purses for hours. So I decided to go to the shopping centre in my town.  
-                    <span class="pink-text">It was a total débâcle</span>. I spent <i>4 DAMN HOURS</i>with my boyfriend searching every possible store and we found <span class="pink-text">NOTHING.</span> 
+                    <span class="pink-text">It was a total débâcle</span>. I spent <i>4 DAMN HOURS</i> with my boyfriend searching every possible store and we found <span class="pink-text">NOTHING.</span> 
                 </p>
                 <p>
                     At the end I got the idea to use a jewelry box. So I searched it on amazon and guess what? 
-                    I found it. I felt like the little girl of <i> Goldilocks and the Three Bears</i> saying "it's too hot", "it's too cold", "it's not black enoug", "It doesn't have the silver clutch" and blah blah blah. 
+                    I found it. I felt like the little girl of <i> Goldilocks and the Three Bears</i> saying "it's too hot", "it's too cold", "it's not black enough", "It doesn't have the silver clutch" and blah blah blah. 
                     But in the end I satisfied my desire and bought a jewelry box, small enough and big enough at the same time, <span class="pink-text">black and with a silver clutch</span>.
                     I wanted the case that way because it was more "elegant" (shut up lucia!).
                 </p>
@@ -105,7 +105,7 @@ const diaryData = {
                 <p><span class="phase-heading">PHASE 4: THE STRUCTURE</span><br>
                     Building the effective structure of the cyberdeck was another funny part, but not funny "ahah", funny  <i>"OMG, I'm dying"</i>. 
                     I bought <span class="pink-text">black sheet of pvc</span> to build the support of the components. 
-                    I divided the case in<span class="pink-text"> two parts: the top one</span> with the <span class="pink-text">monitor</span> the webcam and the mic/speakers, and <span class="pink-text">the bottom one</span> with the keyboard and the<span class="pink-text"> Raspberry pi</span>. 
+                    I divided the case in<span class="pink-text"> two parts: the top one</span> with the <span class="pink-text">monitor</span> the webcam and the mic/speakers, and <span class="pink-text">the bottom one</span> with the keyboard and the<span class="pink-text"> Raspberry Pi</span>. 
                 </p>
                 <p>
                     Taking the right measures was like going through<span class="pink-text"> giving birth</span>. 
@@ -116,7 +116,7 @@ const diaryData = {
                 </p>
                 <p>
                     The <span class="pink-text">top</span> part ended up being a sort of <span class="pink-text">cheddar cheese</span> with holes for the monitor
-                    and the other stuff. Instead, I thought that maybe all <span class="pink-text">the cables must be hidden</span> 
+                    and the other stuff. I thought that maybe all <span class="pink-text">the cables must be hidden</span> 
                     somewhere so I built a sort of <span class="pink-text">box</span> in which to put the Raspberry Pi with all the 
                     vicious stuff it brought with itself. Then I thought: "Why don't I make a sort of raised 
                     ground floor where to put the keyboard, so it is easy to take it out!" My boyfriend 
@@ -125,7 +125,7 @@ const diaryData = {
                     for my tiny cutie too much big keyboard. It's a <span class="pink-text">bluetooth</span> keyboard so I had no 
                     problem with the cables. For the Raspberry Pi I made a <span class="pink-text">cover that could be 
                     opened</span> and I fixed it to the walls of the box with <i>rivets</i>. Fortunately my boyfriend has 
-                    a garage full of all the diy instruments. 
+                    a garage full of all the DIY instruments. 
                 </p>
                 <p>
                     I used the <span class="pink-text">hot glue</span> <i>EVERYWHERE</i>. BUT I'M THE MOTHER OF THE DRAGONS (my cat), THE UNBURNED(who got all her fingers burnt at the end of the project), QUEEN OF THE SEVEN KINGDOMS- ok I cut it. 
@@ -142,12 +142,12 @@ const diaryData = {
                 <p>
                     But one of my current obsessions is all the <span class="pink-text">grunge, y2k style</span> that is kinda turning back.
                     There's this kpop group, the Katseye, I mean, if you watch their videos they have super cool outfits! And it's this <span class="pink-text">maximalist style</span>, 
-                    and I can't, I just love it. 
+                    and I can't, I just love it. It also perfectly fits the indie website whole idea.
                 </p>
                 <p>
                     And it reminded me of the <span class="pink-text">BRATZ</span>. I was full of barbies but in my heart I loved the 
                     Bratz most. So I searched up on pinterest for pics that could be inspiring. The whole 
-                    point of bratz aesthetics is using
+                    point of Bratz aesthetics is using
                     <i>flashy things</i>. 
                 </p>
                 <p>
@@ -159,14 +159,14 @@ const diaryData = {
       right: `
                 <p><span class="phase-heading">PHASE 6: THE SKIN</span><br>
                     Creating the <i>"skin"</i> of my poor naked cyberbaby was so
-                    <span class="pink-text">agonizing </span> that I think this was the worst part of the whole process.
+                    <span class="pink-text">agonizing </span> that I think this was the worst part of the whole process.<br>
                     <span class="pink-text">I SPENT A DAY PUTTING RHINESTONES BY RHINESTONES AROUND THE MONITOR</span>
                     Only <i>God</i> knows how much I suffered.
                 </p>
                 <p>
                     Aslo, putting the <span class="pink-text">dazzled fabring</span> in the space for the keyboard
                     was extremily <span class="pink-text">irritating</span>, because I had to use the hot glue, as always,
-                    and this damn thing created a layer<span class="pink-text">too thick</span> so the keyboard wouldn't
+                    and this damn thing created a layer<span class="pink-text"> too thick</span> so the keyboard wouldn't
                     fit anymore! <i>OMG I don't know how I survived.</i>
                 </p>
                 <p>
@@ -189,11 +189,11 @@ const diaryData = {
                     I also made a little ring for the camera because the hole in which I put it was a little BLEAH.
                 </p>
                 <p>
-                    One thing felt off, the <span class="pink-text">keyboard</span> w was too much black and simple, so I created some stickers with the print of a 
+                    One thing felt off, the <span class="pink-text">keyboard</span> was too much black and simple, so I created some stickers with the print of a 
                     <span class="pink-text">kiss</span> to add on it. The 3D stickers weren't right because 
                     they would make the keyboard impossible to put anywhere in a stable way (<i>because it is closable</i>).
                     So <span class="pink-text">I KISSED A PAPER FOR TWENTY TIMES</span> and chose the best kiss shapes, 
-                   then I used baking paper and scotch to make the stickers
+                   then I used baking paper and scotch tape to make the stickers.
                 </p>
                 <p>
                     At the end, I had it almost done, but I felt like the <span class="pink-text">top of my jewelry box</span> was too much "blank". 
@@ -204,7 +204,7 @@ const diaryData = {
                     (<i>yes I have to mark what's mine!!! Muahahahaha</i>) and pinned it also on the top. <span class="pink-text">PERFECT!</span> 
                 </p>
                 <p>
-                  Then I added <span class="pink-text"> more 3D stickers</span>. PERFECT! That's how my baby was born :3
+                  Then I added <span class="pink-text"> more 3D stickers</span>. That's how my baby was born :3
                 </p>
             `,
     },
@@ -462,21 +462,18 @@ document.addEventListener("DOMContentLoaded", () => {
       entriesContainer.appendChild(li);
     });
 
-    if (guestbookData.length > ENTRIES_PER_PAGE) {
-      if (paginationControls) paginationControls.style.display = "flex";
-      if (pageInfo)
-        pageInfo.innerText = `Page ${currentGbPage} of ${totalPages}`;
-      if (gbPrevBtn) {
-        gbPrevBtn.style.opacity = currentGbPage === 1 ? "0.5" : "1";
-        gbPrevBtn.style.pointerEvents = currentGbPage === 1 ? "none" : "auto";
-      }
-      if (gbNextBtn) {
-        gbNextBtn.style.opacity = currentGbPage === totalPages ? "0.5" : "1";
-        gbNextBtn.style.pointerEvents =
-          currentGbPage === totalPages ? "none" : "auto";
-      }
-    } else {
-      if (paginationControls) paginationControls.style.display = "none";
+    // Always show pagination controls, even if only one page
+    if (paginationControls) paginationControls.style.display = "flex";
+    if (pageInfo)
+      pageInfo.innerText = `Page ${currentGbPage} of ${totalPages}`;
+    if (gbPrevBtn) {
+      gbPrevBtn.style.opacity = currentGbPage === 1 ? "0.5" : "1";
+      gbPrevBtn.style.pointerEvents = currentGbPage === 1 ? "none" : "auto";
+    }
+    if (gbNextBtn) {
+      gbNextBtn.style.opacity = currentGbPage === totalPages ? "0.5" : "1";
+      gbNextBtn.style.pointerEvents =
+        currentGbPage === totalPages ? "none" : "auto";
     }
   }
 
@@ -891,7 +888,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p class="pink-text" style="text-align: left;margin-bottom:0px">Hello there!</p>
                         <img style="width: 278px; height: 137px; margin: 2px auto 8px auto; display: block;" src="gif/hello_there.gif" class="gif" alt="obi one">
                         <div style="display:flex;margin-bottom:0px"><p style="margin-bottom:0px">This section is dedicated to me!!!</p><img src="img/slay.png" style="width: 40px;height: 34px; top:-5px; position:relative;"></div>
-                        <p style="margin-bottom:2px">I'm a little <span class="pink-text">gremlin</span> from 2004 who loves too much things.
+                        <p style="margin-bottom:2px">I'm a little <span class="pink-text">gremlin</span> from 2004 who loves too many things.
                          Recently I passed from studying tarots, to crocheting, to trying building very cool things 
                          like the totally spies compowder, because duh! Who doesn't want to do it?! So, the whole cyberdeck project, 
                          as well as this website, are the product of my current <span class="pink-text">hyperfixation</span>!</p>
@@ -933,13 +930,13 @@ document.addEventListener("DOMContentLoaded", () => {
                                 <p>Anyway, check out Ube Boobey, (<a
                                 href="https://www.youtube.com/@UbeBoobey" class="pink-text">click here</a>), she's my muse.</p>
                             </div> 
-                             <img style="width: 258px;height: 153px; margin-top: 0px;" src="img/farquaad.jfif" class="gif" alt="Lord Farquad">
+                             <img style="width: 258px;height: 153px; margin-top: 0px;" src="img/farquaad.png" class="gif" alt="Lord Farquad">
                         </div>
                         <p style="margin-bottom: 13px; margin-top:8px">The idea behind this site starts with <span class="pink-text">checking facts</span>.
                         We live in Varoufakis's technofeudalism, a system where we are the <span class="pink-text">serfs of Big Techs</span> that drain our time and emotions. 
                         The fix? <span class="pink-text">Use the tech to hack the tech.</span></p>
                         <p> Quincho and Walsh (they're very cool, google them!) explain that online
-                                we are forced to be a <span class="pink-text">'Girl'</span>.
+                                we are forced to be a <span class="pink-text">"Girl"</span>.
                                 Naive and mischievous, without responsibilities. But we can use this
                                 stereotype as a <span class="pink-text">Trojan horse</span> to sabotage the system.</p>
                        <div style="overflow: hidden;">
